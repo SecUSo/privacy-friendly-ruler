@@ -1,1 +1,1 @@
-# privacy-fiednly-ruler
+# privacy-fiendly-ruler
