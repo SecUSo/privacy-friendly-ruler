@@ -38,14 +38,13 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        TextView textView = (TextView) findViewById(R.id.heading_TextView);
-        textView.setText("BLABLA");
-
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
         double lenX = (dm.widthPixels)/(dm.xdpi); //width in inches
         double lenY = (dm.heightPixels)/(dm.ydpi); //height in inches
-        System.out.println("Dimensions: " + lenX +" by "+lenY+" inches.");
+
+        TextView textView = (TextView) findViewById(R.id.heading_TextView);
+        textView.setText("Dimensions: " + lenX +" by "+lenY+" inches.");
     }
 
     @Override
@@ -92,7 +91,9 @@ public class MainActivity extends AppCompatActivity
 
             // Handle the mode selection
         } else if (id == R.id.nav_settings) {
-
+            intent.setClass(getBaseContext(), SettingsActivity.class);
+            startActivityForResult(intent, 0);
+            return true;
         } else if (id == R.id.nav_help) {
 
         } else if (id == R.id.nav_about) {

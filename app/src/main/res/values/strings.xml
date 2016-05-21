@@ -9,6 +9,7 @@
     <string name="app_name_long">Privacy Friendly Ruler</string>
     <string name="version_number">Version 0.1</string>
     <string name="about">About</string>
+    <string name="settings">Settings</string>
     <string name="about_author">Author: Roberts Kolosovs</string>
     <string name="about_affiliation">In affiliation with</string>
     <string name="privacy_friendly">This application belongs to the Privacy Friendly Apps.</string>

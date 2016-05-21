@@ -4,22 +4,24 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 
 /**
- * Created by yonjuni on 25.08.15.
- * Shamelessly "borrowed" by roberts on 21.05.16.
+ * Created by roberts on 21.05.16.
  */
-public class AboutActivity extends AppCompatActivity {
-
+public class SettingsActivity extends AppCompatActivity {
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle(R.string.about);
+        actionBar.setTitle(R.string.settings);
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
-    }
 
+        getFragmentManager().beginTransaction().
+                replace(android.R.id.content, new SettingsFragment()).
+                commit();
+    }
 }

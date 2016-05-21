@@ -20,9 +20,13 @@
         </activity>
 
         <activity
-            android:name="org.secuso.privacyfriendlyruler.AboutActivity"
-            android:parentActivityName="org.secuso.privacyfriendlyruler.MainActivity"
+            android:name=".AboutActivity"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".MainActivity">
         </activity>
     </application>
 

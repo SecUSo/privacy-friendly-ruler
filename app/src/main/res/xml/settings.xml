@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:id="@+id/pref_automatic_note_deletion"
+        android:key="pref_automatic_note_deletion"
+        android:title="Test Setting"
+        android:summary="Switch setting for test purposes."
+        android:defaultValue="true"/>
+</PreferenceScreen>
