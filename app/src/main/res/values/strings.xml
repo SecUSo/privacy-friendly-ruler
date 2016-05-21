@@ -8,6 +8,10 @@
 
     <string name="app_name_long">Privacy Friendly Ruler</string>
     <string name="version_number">Version 0.1</string>
+    <string name="mode">Mode</string>
+    <string name="ruler">Ruler</string>
+    <string name="gallery">Picture from Gallery</string>
+    <string name="camera">Take Picture</string>
     <string name="about">About</string>
     <string name="settings">Settings</string>
     <string name="help">Help</string>

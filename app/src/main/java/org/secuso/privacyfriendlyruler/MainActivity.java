@@ -87,9 +87,21 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         Intent intent = new Intent();
 
-        if (id == R.id.nav_mode) {
-
-            // Handle the mode selection
+        if (id == R.id.nav_ruler) {
+            //TODO
+            //intent.setClass(getBaseContext(), RulerActivity.class);
+            //startActivityForResult(intent, 0);
+            //return true;
+        } else if (id == R.id.nav_gallery) {
+            //TODO
+            //intent.setClass(getBaseContext(), GalleryActivity.class);
+            //startActivityForResult(intent, 0);
+            //return true;
+        } else if (id == R.id.nav_camera) {
+            //TODO
+            //intent.setClass(getBaseContext(), CameraActivity.class);
+            //startActivityForResult(intent, 0);
+            //return true;
         } else if (id == R.id.nav_settings) {
             intent.setClass(getBaseContext(), SettingsActivity.class);
             startActivityForResult(intent, 0);

@@ -1,31 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
         <group android:id="@+id/group1">
             <item
                 android:id="@+id/nav_mode"
-                android:icon="@drawable/ic_menu_mode"
-                android:title="Mode" />
+                android:title="@string/mode">
+                <menu xmlns:android="http://schemas.android.com/apk/res/android">
+                    <item
+                        android:id="@+id/nav_ruler"
+                        android:icon="@drawable/ic_menu_ruler"
+                        android:title="@string/ruler" />
+                    <item
+                        android:id="@+id/nav_gallery"
+                        android:icon="@drawable/ic_menu_gallery"
+                        android:title="@string/gallery" />
+                    <item
+                        android:id="@+id/nav_camera"
+                        android:icon="@drawable/ic_menu_camera"
+                        android:title="@string/camera" />
+                </menu>
+            </item>
+
         </group>
         <group android:id="@+id/group2">
             <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/ic_menu_settings"
-                android:title="Settings" />
+                android:title="@string/settings" />
         </group>
         <group android:id="@+id/group3">
             <item
                 android:id="@+id/nav_help"
                 android:icon="@drawable/ic_menu_help"
-                android:title="Help" />
+                android:title="@string/help" />
         </group>
         <group android:id="@+id/group4">
             <item
                 android:id="@+id/nav_about"
                 android:icon="@drawable/ic_menu_about"
-                android:title="About" />
+                android:title="@string/about" />
         </group>
-    </group>
 
 </menu>
