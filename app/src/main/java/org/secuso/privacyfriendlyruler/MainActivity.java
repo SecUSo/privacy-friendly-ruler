@@ -1,6 +1,7 @@
 package org.secuso.privacyfriendlyruler;
 
 import android.bluetooth.BluetoothClass;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -16,6 +17,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -36,8 +38,11 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        TextView textView = (TextView) findViewById(R.id.heading_TextView);
+        textView.setText("BLABLA");
+
         DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getRealMetrics(dm);
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
         double lenX = (dm.widthPixels)/(dm.xdpi); //width in inches
         double lenY = (dm.heightPixels)/(dm.ydpi); //height in inches
         System.out.println("Dimensions: " + lenX +" by "+lenY+" inches.");
@@ -81,15 +86,19 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        Intent intent = new Intent();
 
         if (id == R.id.nav_mode) {
+
             // Handle the mode selection
         } else if (id == R.id.nav_settings) {
 
         } else if (id == R.id.nav_help) {
 
         } else if (id == R.id.nav_about) {
-
+            intent.setClass(getBaseContext(), AboutActivity.class);
+            startActivityForResult(intent, 0);
+            return true;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

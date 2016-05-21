@@ -18,6 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="org.secuso.privacyfriendlyruler.AboutActivity"
+            android:parentActivityName="org.secuso.privacyfriendlyruler.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>
