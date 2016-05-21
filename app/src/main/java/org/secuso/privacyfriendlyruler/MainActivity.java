@@ -95,7 +95,9 @@ public class MainActivity extends AppCompatActivity
             startActivityForResult(intent, 0);
             return true;
         } else if (id == R.id.nav_help) {
-
+            intent.setClass(getBaseContext(), HelpActivity.class);
+            startActivityForResult(intent, 0);
+            return true;
         } else if (id == R.id.nav_about) {
             intent.setClass(getBaseContext(), AboutActivity.class);
             startActivityForResult(intent, 0);

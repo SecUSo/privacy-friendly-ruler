@@ -28,6 +28,10 @@
             android:name=".SettingsActivity"
             android:parentActivityName=".MainActivity">
         </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
     </application>
 
 </manifest>
