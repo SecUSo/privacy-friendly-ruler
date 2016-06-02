@@ -45,9 +45,6 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        if (getFragmentManager().getBackStackEntryCount() == 1) {
-            finish();
-        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
@@ -89,19 +86,18 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_ruler) {
             fragmentManager.beginTransaction().
-                    replace(R.id.content_main, new RulerFragment()).
-                    addToBackStack(null).commit();
+                    replace(R.id.content_main, new RulerFragment()).commit();
             ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
             return true;
         } else if (id == R.id.nav_gallery) {
-            //TODO
-            //intent.setClass(getBaseContext(), GalleryActivity.class);
-            //startActivityForResult(intent, 0);
+            fragmentManager.beginTransaction().
+                    replace(R.id.content_main, new GalleryFragment()).commit();
+            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
             return true;
         } else if (id == R.id.nav_camera) {
-            //TODO
-            //intent.setClass(getBaseContext(), CameraActivity.class);
-            //startActivityForResult(intent, 0);
+            fragmentManager.beginTransaction().
+                    replace(R.id.content_main, new CameraFragment()).commit();
+            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
             return true;
         } else if (id == R.id.nav_settings) {
             intent.setClass(getBaseContext(), SettingsActivity.class);
