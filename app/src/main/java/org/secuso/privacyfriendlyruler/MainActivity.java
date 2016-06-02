@@ -1,26 +1,22 @@
 package org.secuso.privacyfriendlyruler;
 
-import android.bluetooth.BluetoothClass;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.provider.Settings;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.app.FragmentManager;
 import android.util.DisplayMetrics;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    FragmentManager fragmentManager = getFragmentManager();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +45,10 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
+        if (getFragmentManager().getBackStackEntryCount() == 1) {
+            finish();
+        }
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
@@ -88,20 +88,21 @@ public class MainActivity extends AppCompatActivity
         Intent intent = new Intent();
 
         if (id == R.id.nav_ruler) {
-            //TODO
-            //intent.setClass(getBaseContext(), RulerActivity.class);
-            //startActivityForResult(intent, 0);
-            //return true;
+            fragmentManager.beginTransaction().
+                    replace(R.id.content_main, new RulerFragment()).
+                    addToBackStack(null).commit();
+            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
+            return true;
         } else if (id == R.id.nav_gallery) {
             //TODO
             //intent.setClass(getBaseContext(), GalleryActivity.class);
             //startActivityForResult(intent, 0);
-            //return true;
+            return true;
         } else if (id == R.id.nav_camera) {
             //TODO
             //intent.setClass(getBaseContext(), CameraActivity.class);
             //startActivityForResult(intent, 0);
-            //return true;
+            return true;
         } else if (id == R.id.nav_settings) {
             intent.setClass(getBaseContext(), SettingsActivity.class);
             startActivityForResult(intent, 0);
