@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 /**
  * Created by roberts on 02.06.16.
@@ -23,7 +23,7 @@ public class RulerFragment extends Fragment {
         container.removeAllViews();
 
         RulerView rulerView = new RulerView(activity.getBaseContext(), activity);
-        LinearLayout rulerLayout = (LinearLayout) rootView.findViewById(R.id.fragment_ruler);
+        RelativeLayout rulerLayout = (RelativeLayout) rootView.findViewById(R.id.fragment_ruler);
         rulerLayout.addView(rulerView);
 
         return rootView;

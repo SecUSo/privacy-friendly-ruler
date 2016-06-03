@@ -33,9 +33,11 @@ public class RulerView extends View {
 
         DisplayMetrics displayMetrics = new DisplayMetrics();
         activity.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+//        this.getDisplay().getMetrics(displayMetrics);
 
 //        heightPx = this.getMeasuredHeight();
 //        widthPx = this.getMeasuredWidth();
+
         ydpi = displayMetrics.ydpi;
         ydpmm = ydpi / 25.4;
         heightPx = displayMetrics.heightPixels;
@@ -58,11 +60,62 @@ public class RulerView extends View {
         paint.setTextSize(textSize);
         paint.setStrokeWidth(lineWidth);
 
-        drawLeftCm(canvas, paint);
-        drawRightCm(canvas, paint);
+//        drawLeftCm(canvas, paint);
+//        drawRightCm(canvas, paint);
+
+//        drawAngleMeasureDeg(canvas, paint);
+        drawAngleMeasureRad(canvas, paint);
 
 //        drawLeftIn(canvas, paint);
 //        drawRightIn(canvas, paint);
+    }
+
+    private void drawAngleMeasureDeg(Canvas canvas, Paint paint){
+        float radius = (float)widthPx/2;
+        float half = (float)(heightPx/2-ydpmm*9);
+        float degInRad = (float)Math.PI /180;
+
+        canvas.drawLine(0, half-radius, 0, half+radius, paint);
+        canvas.drawLine(0, half, radius, half, paint);
+        canvas.drawLine(0, half, (float)Math.sin(45*degInRad)*radius, (float)(half-Math.cos(45*degInRad)*radius), paint);
+        canvas.drawLine(0, half, (float)Math.sin(135*degInRad)*radius, (float)(half-Math.cos(135*degInRad)*radius), paint);
+
+        for (int i = 0; i <= 180; i++){
+            if (i%10 == 0){
+                canvas.drawLine((float)Math.sin(i*degInRad)*radius, (float)(half-Math.cos(i*degInRad)*radius),
+                        (float)(Math.sin(i*degInRad)*(radius+ydpmm*8)), (float)(half-Math.cos(i*degInRad)*(radius+ydpmm*8)), paint);
+            } else if (i%5 == 0){
+                canvas.drawLine((float)Math.sin(i*degInRad)*radius, (float)(half-Math.cos(i*degInRad)*radius),
+                        (float)(Math.sin(i*degInRad)*(radius+ydpmm*5)), (float)(half-Math.cos(i*degInRad)*(radius+ydpmm*5)), paint);
+            } else {
+                canvas.drawLine((float)Math.sin(i*degInRad)*radius, (float)(half-Math.cos(i*degInRad)*radius),
+                        (float)(Math.sin(i*degInRad)*(radius+ydpmm*3)), (float)(half-Math.cos(i*degInRad)*(radius+ydpmm*3)), paint);
+            }
+        }
+    }
+
+    private void drawAngleMeasureRad(Canvas canvas, Paint paint){
+        float radius = (float)widthPx/2;
+        float half = (float)(heightPx/2-ydpmm*9);
+        float piOver24 = (float)Math.PI /24;
+
+        canvas.drawLine(0, half-radius, 0, half+radius, paint);
+        canvas.drawLine(0, half, radius, half, paint);
+        canvas.drawLine(0, half, (float)Math.sin(6*piOver24)*radius, (float)(half-Math.cos(6*piOver24)*radius), paint);
+        canvas.drawLine(0, half, (float)Math.sin(18*piOver24)*radius, (float)(half-Math.cos(18*piOver24)*radius), paint);
+
+        for (int i = 0; i <= 24; i++){
+            if (i%6 == 0){
+                canvas.drawLine((float)Math.sin(i*piOver24)*radius, (float)(half-Math.cos(i*piOver24)*radius),
+                        (float)(Math.sin(i*piOver24)*(radius+ydpmm*8)), (float)(half-Math.cos(i*piOver24)*(radius+ydpmm*8)), paint);
+            } else if (i%2 == 0){
+                canvas.drawLine((float)Math.sin(i*piOver24)*radius, (float)(half-Math.cos(i*piOver24)*radius),
+                        (float)(Math.sin(i*piOver24)*(radius+ydpmm*5)), (float)(half-Math.cos(i*piOver24)*(radius+ydpmm*5)), paint);
+            } else {
+                canvas.drawLine((float)Math.sin(i*piOver24)*radius, (float)(half-Math.cos(i*piOver24)*radius),
+                        (float)(Math.sin(i*piOver24)*(radius+ydpmm*3)), (float)(half-Math.cos(i*piOver24)*(radius+ydpmm*3)), paint);
+            }
+        }
     }
 
     private void drawLeftCm(Canvas canvas, Paint paint){
