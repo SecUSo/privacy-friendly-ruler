@@ -22,6 +22,7 @@ public class RulerView extends View {
     double ydpmm;
     double heightPx;
     double heightmm;
+    double heightin;
     double widthPx;
     float lineWidth;
     int textSize;
@@ -39,6 +40,7 @@ public class RulerView extends View {
         ydpmm = ydpi / 25.4;
         heightPx = displayMetrics.heightPixels;
         heightmm = heightPx/ydpmm;
+        heightin = ydpi;
         widthPx = displayMetrics.widthPixels;
         db = ContextCompat.getColor(context, R.color.darkblue);
         textSize = (int)(ydpmm *2.5);
@@ -56,49 +58,114 @@ public class RulerView extends View {
         paint.setTextSize(textSize);
         paint.setStrokeWidth(lineWidth);
 
-        drawLeftSide(canvas, paint);
-        drawRightSide(canvas, paint);
+        drawLeftCm(canvas, paint);
+        drawRightCm(canvas, paint);
+
+//        drawLeftIn(canvas, paint);
+//        drawRightIn(canvas, paint);
     }
 
-    private void drawLeftSide(Canvas canvas, Paint paint){
-        Path path = new Path();
-        double stepLeft = ydpmm;
-
+    private void drawLeftCm(Canvas canvas, Paint paint){
         for (int i = 0; i < heightmm; i++){
             if (i%10 == 0) {
                 //draw 8mm line every cm
-                canvas.drawLine(0, (float)stepLeft*i, (float)stepLeft*8, (float)stepLeft*i, paint);
+                canvas.drawLine(0, (float)ydpmm*i, (float)ydpmm*8, (float)ydpmm*i, paint);
                 //draw a number every cm
-                canvas.drawText(""+i/10, (float)stepLeft*8+(textSize/5), (float)(stepLeft*i+textSize), paint);
+                canvas.drawText(""+i/10, (float)ydpmm*8+(textSize/5), (float)(ydpmm*i+textSize), paint);
             } else if (i%5 == 0) {
                 //draw 5mm line every 5mm
-                canvas.drawLine(0, (float)stepLeft*i, (float)stepLeft*5, (float)stepLeft*i, paint);
+                canvas.drawLine(0, (float)ydpmm*i, (float)ydpmm*5, (float)ydpmm*i, paint);
             } else {
                 //draw 3mm line every mm
-                canvas.drawLine(0, (float)stepLeft*i, (float)stepLeft*3, (float)stepLeft*i, paint);
+                canvas.drawLine(0, (float)ydpmm*i, (float)ydpmm*3, (float)ydpmm*i, paint);
             }
         }
     }
 
-    private void drawRightSide(Canvas canvas, Paint paint){
+    private void drawLeftIn(Canvas canvas, Paint paint){
+        for (int i = 0; i < (heightin*32); i++){
+            if (i%32 == 0) {
+                //draw 8mm line every inch
+                canvas.drawLine(0, (float)ydpmm*i, (float)(ydpmm*8), (float)ydpmm*i, paint);
+                //draw a number every inch
+                canvas.drawText(""+i/32, (float)ydpmm*8+(textSize/5), (float)(ydpmm*i+textSize), paint);
+            } else if (i%16 == 0) {
+                //draw 6mm line every 1/2 inch
+                canvas.drawLine(0, (float)ydpmm*i, (float)(ydpmm*6), (float)ydpmm*i, paint);
+            } else if (i%8 == 0) {
+                //draw 4mm line every 1/4 inch
+                canvas.drawLine(0, (float)ydpmm*i, (float)(ydpmm*4), (float)ydpmm*i, paint);
+            } else if (i%4 == 0) {
+                //draw 3mm line every 1/8 inch
+                canvas.drawLine(0, (float)ydpmm*i, (float)(ydpmm*3), (float)ydpmm*i, paint);
+            } else if (i%2 == 0) {
+                //draw 2mm line every 1/16 inch
+                canvas.drawLine(0, (float)ydpmm*i, (float)(ydpmm*2), (float)ydpmm*i, paint);
+            } else {
+                //draw 1.5mm line every 1/32 inch
+                canvas.drawLine(0, (float)ydpmm*i, (float)(ydpmm*1.5), (float)ydpmm*i, paint);
+            }
+        }
+    }
+
+    private void drawRightCm(Canvas canvas, Paint paint){
         Path path = new Path();
-        double stepRight = ydpmm;
 
         for (int i = 0; i < heightmm; i++){
             if (i%10 == 0) {
                 //draw 8mm line every cm
-                canvas.drawLine((float)(widthPx-stepRight*(8+5)), (float)(heightPx-stepRight*(i+18)), (float)(widthPx-stepRight*5), (float)(heightPx-stepRight*(i+18)), paint);
+                canvas.drawLine((float)(widthPx-ydpmm*(8+5)), (float)(heightPx-ydpmm*(i+18)),
+                        (float)(widthPx-ydpmm*5), (float)(heightPx-ydpmm*(i+18)), paint);
                 //draw a number every cm
                 path.reset();
-                path.moveTo((float)(widthPx-stepRight*(8+5)-textSize/5), (float)(heightPx-stepRight*(i+16)-textSize));
-                path.lineTo((float)(widthPx-stepRight*(8+5)-textSize/5), (float)(heightPx-stepRight*(i+16)-2*textSize));
+                path.moveTo((float)(widthPx-ydpmm*(8+5)-textSize/5), (float)(heightPx-ydpmm*(i+16)-textSize));
+                path.lineTo((float)(widthPx-ydpmm*(8+5)-textSize/5), (float)(heightPx-ydpmm*(i+16)-2*textSize));
                 canvas.drawTextOnPath(""+i/10, path, 0, 0, paint);
             } else if (i%5 == 0) {
                 //draw 5mm line every 5mm
-                canvas.drawLine((float)(widthPx-stepRight*(5+5)), (float)(heightPx-stepRight*(i+18)), (float)(widthPx-stepRight*5), (float)(heightPx-stepRight*(i+18)), paint);
+                canvas.drawLine((float)(widthPx-ydpmm*(5+5)), (float)(heightPx-ydpmm*(i+18)),
+                        (float)(widthPx-ydpmm*5), (float)(heightPx-ydpmm*(i+18)), paint);
             } else {
                 //draw 3mm line every mm
-                canvas.drawLine((float)(widthPx-stepRight*(3+5)), (float)(heightPx-stepRight*(i+18)), (float)(widthPx-stepRight*5), (float)(heightPx-stepRight*(i+18)), paint);
+                canvas.drawLine((float)(widthPx-ydpmm*(3+5)), (float)(heightPx-ydpmm*(i+18)),
+                        (float)(widthPx-ydpmm*5), (float)(heightPx-ydpmm*(i+18)), paint);
+            }
+        }
+    }
+
+    private void drawRightIn(Canvas canvas, Paint paint){
+        Path path = new Path();
+
+        for (int i = 0; i < (heightin*32); i++){
+            if (i%32 == 0) {
+                //draw 8mm line every inch
+                canvas.drawLine((float)(widthPx-ydpmm*(8+5)), (float)(heightPx-ydpmm*(i+18)),
+                        (float)(widthPx-ydpmm*5), (float)(heightPx-ydpmm*(i+18)), paint);
+                //draw a number every inch
+                path.reset();
+                path.moveTo((float)(widthPx-ydpmm*(8+5)-textSize/5), (float)(heightPx-ydpmm*(i+16)-textSize));
+                path.lineTo((float)(widthPx-ydpmm*(8+5)-textSize/5), (float)(heightPx-ydpmm*(i+16)-2*textSize));
+                canvas.drawTextOnPath(""+i/32, path, 0, 0, paint);
+            } else if (i%16 == 0) {
+                //draw 6mm line every 1/2 inch
+                canvas.drawLine((float)(widthPx-ydpmm*(6+5)), (float)(heightPx-ydpmm*(i+18)),
+                        (float)(widthPx-ydpmm*5), (float)(heightPx-ydpmm*(i+18)), paint);
+            } else if (i%8 == 0) {
+                //draw 4mm line every 1/4 inch
+                canvas.drawLine((float)(widthPx-ydpmm*(4+5)), (float)(heightPx-ydpmm*(i+18)),
+                        (float)(widthPx-ydpmm*5), (float)(heightPx-ydpmm*(i+18)), paint);
+            } else if (i%4 == 0) {
+                //draw 3mm line every 1/8 inch
+                canvas.drawLine((float)(widthPx-ydpmm*(3+5)), (float)(heightPx-ydpmm*(i+18)),
+                        (float)(widthPx-ydpmm*5), (float)(heightPx-ydpmm*(i+18)), paint);
+            } else if (i%2 == 0) {
+                //draw 2mm line every 1/16 inch
+                canvas.drawLine((float)(widthPx-ydpmm*(2+5)), (float)(heightPx-ydpmm*(i+18)),
+                        (float)(widthPx-ydpmm*5), (float)(heightPx-ydpmm*(i+18)), paint);
+            } else {
+                //draw 1.5mm line every 1/32 inch
+                canvas.drawLine((float)(widthPx-ydpmm*(1.5+5)), (float)(heightPx-ydpmm*(i+18)),
+                        (float)(widthPx-ydpmm*5), (float)(heightPx-ydpmm*(i+18)), paint);
             }
         }
     }
