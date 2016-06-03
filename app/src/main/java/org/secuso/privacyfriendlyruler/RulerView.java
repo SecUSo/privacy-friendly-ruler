@@ -63,8 +63,8 @@ public class RulerView extends View {
 //        drawLeftCm(canvas, paint);
 //        drawRightCm(canvas, paint);
 
-        drawAngleMeasureDeg(canvas, paint);
-//        drawAngleMeasureRad(canvas, paint);
+//        drawAngleMeasureDeg(canvas, paint);
+        drawAngleMeasureRad(canvas, paint);
 
 //        drawLeftIn(canvas, paint);
 //        drawRightIn(canvas, paint);
@@ -85,11 +85,13 @@ public class RulerView extends View {
             if (i%10 == 0){
                 canvas.drawLine((float)Math.sin(i*degInRad)*radius, (float)(half-Math.cos(i*degInRad)*radius),
                         (float)(Math.sin(i*degInRad)*(radius+ydpmm*8)), (float)(half-Math.cos(i*degInRad)*(radius+ydpmm*8)), paint);
-                //draw a number every 10 deg
+                //draw a number every 10 deg (except 0 and 180)
                 if (i != 0 && i != 180){
                     path.reset();
-                    path.moveTo((float)(Math.sin(i*degInRad)*(radius+ydpmm*8)+textSize/5), (float)(half-Math.cos(i*degInRad)*(radius+ydpmm*8)-textSize*0.75));
-                    path.lineTo((float)(Math.sin(i*degInRad)*(radius+ydpmm*8)+textSize/5), (float)(half-Math.cos(i*degInRad)*(radius+ydpmm*8)+textSize*0.6));
+                    path.moveTo((float)(Math.sin(i*degInRad)*(radius+ydpmm*8)+textSize/5),
+                            (float)(half-Math.cos(i*degInRad)*(radius+ydpmm*8)-textSize*0.75));
+                    path.lineTo((float)(Math.sin(i*degInRad)*(radius+ydpmm*8)+textSize/5),
+                            (float)(half-Math.cos(i*degInRad)*(radius+ydpmm*8)+textSize*0.6));
                     canvas.drawTextOnPath(""+i, path, 0, 0, paint);
                 }
             } else if (i%5 == 0){
@@ -106,6 +108,8 @@ public class RulerView extends View {
         float radius = (float)widthPx/2;
         float half = (float)(heightPx/2-ydpmm*9);
         float piOver24 = (float)Math.PI /24;
+        Path path = new Path();
+        String[] labels = {"0", "π/12", "π/6", "π/4", "π/3", "5π/12", "π/2", "7π/12", "2π/3", "3π/4", "5π/6", "11π/12", "π"};
 
         canvas.drawLine(0, half-radius, 0, half+radius, paint);
         canvas.drawLine(0, half, radius, half, paint);
@@ -116,9 +120,23 @@ public class RulerView extends View {
             if (i%6 == 0){
                 canvas.drawLine((float)Math.sin(i*piOver24)*radius, (float)(half-Math.cos(i*piOver24)*radius),
                         (float)(Math.sin(i*piOver24)*(radius+ydpmm*8)), (float)(half-Math.cos(i*piOver24)*(radius+ydpmm*8)), paint);
+                if (i!= 0 && i != 24) {
+                    path.reset();
+                    path.moveTo((float) (Math.sin(i * piOver24) * (radius + ydpmm * 8) + textSize / 5),
+                            (float) (half - Math.cos(i * piOver24) * (radius + ydpmm * 8) - textSize * 0.85));
+                    path.lineTo((float) (Math.sin(i * piOver24) * (radius + ydpmm * 8) + textSize / 5),
+                            (float) (half - Math.cos(i * piOver24) * (radius + ydpmm * 8) + textSize * 0.85));
+                    canvas.drawTextOnPath(labels[i / 2], path, 0, 0, paint);
+                }
             } else if (i%2 == 0){
                 canvas.drawLine((float)Math.sin(i*piOver24)*radius, (float)(half-Math.cos(i*piOver24)*radius),
                         (float)(Math.sin(i*piOver24)*(radius+ydpmm*5)), (float)(half-Math.cos(i*piOver24)*(radius+ydpmm*5)), paint);
+                path.reset();
+                path.moveTo((float) (Math.sin(i * piOver24) * (radius + ydpmm * 5) + textSize / 4),
+                        (float) (half - Math.cos(i * piOver24) * (radius + ydpmm * 5) - textSize * 1.4));
+                path.lineTo((float) (Math.sin(i * piOver24) * (radius + ydpmm * 5) + textSize / 4),
+                        (float) (half - Math.cos(i * piOver24) * (radius + ydpmm *5) + textSize * 1.4));
+                canvas.drawTextOnPath(labels[i / 2], path, 0, 0, paint);
             } else {
                 canvas.drawLine((float)Math.sin(i*piOver24)*radius, (float)(half-Math.cos(i*piOver24)*radius),
                         (float)(Math.sin(i*piOver24)*(radius+ydpmm*3)), (float)(half-Math.cos(i*piOver24)*(radius+ydpmm*3)), paint);
