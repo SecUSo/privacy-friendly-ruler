@@ -63,8 +63,8 @@ public class RulerView extends View {
 //        drawLeftCm(canvas, paint);
 //        drawRightCm(canvas, paint);
 
-//        drawAngleMeasureDeg(canvas, paint);
-        drawAngleMeasureRad(canvas, paint);
+        drawAngleMeasureDeg(canvas, paint);
+//        drawAngleMeasureRad(canvas, paint);
 
 //        drawLeftIn(canvas, paint);
 //        drawRightIn(canvas, paint);
@@ -74,6 +74,7 @@ public class RulerView extends View {
         float radius = (float)widthPx/2;
         float half = (float)(heightPx/2-ydpmm*9);
         float degInRad = (float)Math.PI /180;
+        Path path = new Path();
 
         canvas.drawLine(0, half-radius, 0, half+radius, paint);
         canvas.drawLine(0, half, radius, half, paint);
@@ -84,6 +85,13 @@ public class RulerView extends View {
             if (i%10 == 0){
                 canvas.drawLine((float)Math.sin(i*degInRad)*radius, (float)(half-Math.cos(i*degInRad)*radius),
                         (float)(Math.sin(i*degInRad)*(radius+ydpmm*8)), (float)(half-Math.cos(i*degInRad)*(radius+ydpmm*8)), paint);
+                //draw a number every 10 deg
+                if (i != 0 && i != 180){
+                    path.reset();
+                    path.moveTo((float)(Math.sin(i*degInRad)*(radius+ydpmm*8)+textSize/5), (float)(half-Math.cos(i*degInRad)*(radius+ydpmm*8)-textSize*0.75));
+                    path.lineTo((float)(Math.sin(i*degInRad)*(radius+ydpmm*8)+textSize/5), (float)(half-Math.cos(i*degInRad)*(radius+ydpmm*8)+textSize*0.6));
+                    canvas.drawTextOnPath(""+i, path, 0, 0, paint);
+                }
             } else if (i%5 == 0){
                 canvas.drawLine((float)Math.sin(i*degInRad)*radius, (float)(half-Math.cos(i*degInRad)*radius),
                         (float)(Math.sin(i*degInRad)*(radius+ydpmm*5)), (float)(half-Math.cos(i*degInRad)*(radius+ydpmm*5)), paint);
