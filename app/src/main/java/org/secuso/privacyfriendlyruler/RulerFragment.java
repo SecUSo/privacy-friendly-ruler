@@ -22,7 +22,6 @@ public class RulerFragment extends Fragment {
         rootView = inflater.inflate(R.layout.fragment_ruler, container, false);
         container.removeAllViews();
 
-
         RulerView rulerView = new RulerView(activity.getBaseContext(), activity);
         LinearLayout rulerLayout = (LinearLayout) rootView.findViewById(R.id.fragment_ruler);
         rulerLayout.addView(rulerView);

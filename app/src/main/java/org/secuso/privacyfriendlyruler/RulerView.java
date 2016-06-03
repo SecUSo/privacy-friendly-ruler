@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Path;
 import android.support.annotation.ColorRes;
 import android.support.v4.content.ContextCompat;
 import android.util.DisplayMetrics;
@@ -49,6 +50,7 @@ public class RulerView extends View {
         paint.setColor(db);
         paint.setAlpha(255);
         paint.setTextSize(textSize);
+        Path path = new Path();
         for (int i = 0; i < heightmm; i++){
             if (i%10 == 0) {
                 //draw 8mm line every cm
@@ -56,20 +58,23 @@ public class RulerView extends View {
                 canvas.drawLine(0, (float)ydpmm*i, (float)ydpmm*8, (float)ydpmm*i, paint);
                 canvas.drawText(""+i/10, (float)ydpmm*8+(textSize/5), (float)(ydpmm*i+textSize), paint);
                 //right side
-                canvas.drawLine((float)(widthPx-ydpmm*8), (float)(heightPx-ydpmm*i), (float)widthPx, (float)(heightPx-ydpmm*i), paint);
-                canvas.drawText(""+i/10, (float)(widthPx-ydpmm*8-textSize/5), (float)(heightPx-ydpmm*i+textSize), paint);
+                canvas.drawLine((float)(widthPx-ydpmm*(8+5)), (float)(heightPx-ydpmm*(i+18)), (float)(widthPx-ydpmm*5), (float)(heightPx-ydpmm*(i+18)), paint);
+                path.reset();
+                path.moveTo((float)(widthPx-ydpmm*(8+5)-textSize/5), (float)(heightPx-ydpmm*(i+16)-textSize));
+                path.lineTo((float)(widthPx-ydpmm*(8+5)-textSize/5), (float)(heightPx-ydpmm*(i+16)-2*textSize));
+                canvas.drawTextOnPath(""+i/10, path, 0, 0, paint);
             } else if (i%5 == 0) {
                 //draw 5mm line every 5mm
                 //left side
                 canvas.drawLine(0, (float)ydpmm*i, (float)ydpmm*5, (float)ydpmm*i, paint);
                 //right side
-                canvas.drawLine((float)(widthPx-ydpmm*5), (float)(heightPx-ydpmm*i), (float)widthPx, (float)(heightPx-ydpmm*i), paint);
+                canvas.drawLine((float)(widthPx-ydpmm*(5+5)), (float)(heightPx-ydpmm*(i+18)), (float)(widthPx-ydpmm*5), (float)(heightPx-ydpmm*(i+18)), paint);
             } else {
                 //draw 3mm line every mm
                 //left side
                 canvas.drawLine(0, (float)ydpmm*i, (float)ydpmm*3, (float)ydpmm*i, paint);
                 //right side
-                canvas.drawLine((float)(widthPx-ydpmm*3), (float)(heightPx-ydpmm*i), (float)widthPx, (float)(heightPx-ydpmm*i), paint);
+                canvas.drawLine((float)(widthPx-ydpmm*(3+5)), (float)(heightPx-ydpmm*(i+18)), (float)(widthPx-ydpmm*5), (float)(heightPx-ydpmm*(i+18)), paint);
             }
         }
     }
