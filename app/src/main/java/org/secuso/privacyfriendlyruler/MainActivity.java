@@ -38,6 +38,15 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        if (!prefs.contains("lastMode")){
+            prefs.edit().putString("lastMode", "ruler").commit();
+            //TODO: Start a first run tutorial here.
+            fragmentManager.beginTransaction().
+                    replace(R.id.content_main, new RulerFragment()).commit();
+            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
+        } else {
+            startLastMode();
+        }
     }
 
     @Override
@@ -77,9 +86,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onResume() {
         super.onResume();
-        fragmentManager.beginTransaction().
-                replace(R.id.content_main, new RulerFragment()).commit();
-        ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
+        startLastMode();
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -93,16 +100,19 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction().
                     replace(R.id.content_main, new RulerFragment()).commit();
             ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
+            prefs.edit().putString("lastMode", "ruler").commit();
             return true;
         } else if (id == R.id.nav_gallery) {
             fragmentManager.beginTransaction().
                     replace(R.id.content_main, new GalleryFragment()).commit();
             ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
+            prefs.edit().putString("lastMode", "gallery").commit();
             return true;
         } else if (id == R.id.nav_camera) {
             fragmentManager.beginTransaction().
                     replace(R.id.content_main, new CameraFragment()).commit();
             ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
+            prefs.edit().putString("lastMode", "camera").commit();
             return true;
         } else if (id == R.id.nav_settings) {
             intent.setClass(getBaseContext(), SettingsActivity.class);
@@ -121,5 +131,22 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void startLastMode() {
+        String lastMode = prefs.getString("lastMode", "ruler");
+        if (lastMode.equals("ruler")) {
+            fragmentManager.beginTransaction().
+                    replace(R.id.content_main, new RulerFragment()).commit();
+            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
+        } else if (lastMode.equals("gallery")) {
+            fragmentManager.beginTransaction().
+                    replace(R.id.content_main, new GalleryFragment()).commit();
+            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
+        } else { //if (lastMode.equals("camera"))
+            fragmentManager.beginTransaction().
+                    replace(R.id.content_main, new CameraFragment()).commit();
+            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
+        }
     }
 }
