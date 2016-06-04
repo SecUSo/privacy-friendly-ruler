@@ -31,7 +31,7 @@ public class RulerFragment extends Fragment {
 
 
         RulerView rulerView = new RulerView(activity.getBaseContext(), (displayMetrics.ydpi)/25.4,
-                PreferenceManager.getDefaultSharedPreferences(activity.getBaseContext()));
+                displayMetrics.ydpi/32, PreferenceManager.getDefaultSharedPreferences(activity.getBaseContext()));
         rulerLayout.addView(rulerView);
 
         return rootView;
