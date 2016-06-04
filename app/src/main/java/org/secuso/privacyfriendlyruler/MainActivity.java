@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     FragmentManager fragmentManager = getFragmentManager();
+    int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,13 +35,9 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(dm);
-        double lenX = (dm.widthPixels)/(dm.xdpi); //width in inches
-        double lenY = (dm.heightPixels)/(dm.ydpi); //height in inches
-
+        i++;
         TextView textView = (TextView) findViewById(R.id.heading_TextView);
-        textView.setText("Dimensions: " + lenX +" by "+lenY+" inches.");
+        textView.setText("Main activity called");
     }
 
     @Override
@@ -75,6 +72,14 @@ public class MainActivity extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        fragmentManager.beginTransaction().
+                replace(R.id.content_main, new RulerFragment()).commit();
+        ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
