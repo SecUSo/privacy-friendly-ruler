@@ -6,6 +6,7 @@ import android.graphics.Canvas;
 import android.app.Activity;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.preference.PreferenceManager;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
 
@@ -23,6 +24,7 @@ public class RulerView extends View {
     float lineWidth;
     int textSize ;
     int db;
+    SharedPreferences sharedPreferences;
 //    Activity activity;
 
     public RulerView(Context context, double ydpmm, double height, double width) {
@@ -35,6 +37,7 @@ public class RulerView extends View {
 //        heightPx = this.getMeasuredHeight();
 //        widthPx = this.getMeasuredWidth();
 //        ydpi = displayMetrics.ydpi;
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         dpmm = ydpmm;//ydpi / 25.4;
         heightPx = height;//displayMetrics.heightPixels;
         heightmm = heightPx/dpmm;
@@ -56,27 +59,26 @@ public class RulerView extends View {
         paint.setTextSize(textSize);
         paint.setStrokeWidth(lineWidth);
 
-//        canvas.drawRect((float)widthPx-500, (float)heightPx-500, (float)widthPx+50, (float)heightPx+50, paint);
-//        SharedPreferences prefs = activity.getSharedPreferences("settings", 0);
-//
-//        if (prefs.getString("pref_leftruler", "cm").equals("cm")){
-//            drawLeftCm(canvas, paint);
-//        } else if (prefs.getString("pref_leftruler", "inch").equals("cm")) {
-//            drawLeftIn(canvas, paint);
-//        }
-//
-//        if (prefs.getString("pref_rightruler", "inch").equals("cm")){
-//            drawRightCm(canvas, paint);
-//        } else if (prefs.getString("pref_rightruler", "inch").equals("inch")) {
-//            drawRightIn(canvas, paint);
-//        }
-//
-//
-//        if (prefs.getString("pref_anglemeasure", "off").equals("degree")){
-//            drawAngleMeasureDeg(canvas, paint);
-//        } else if (prefs.getString("pref_anglemeasure", "off").equals("radian")) {
+        String prefLeftruler = sharedPreferences.getString("pref_leftruler", "cm");
+        if (prefLeftruler.equals("cm")){
+            drawLeftCm(canvas, paint);
+        } else if (prefLeftruler.equals("inch")) {
+            drawLeftIn(canvas, paint);
+        }
+
+        String prefRightruler = sharedPreferences.getString("pref_rightruler", "inch");
+        if (prefRightruler.equals("cm")){
+            drawRightCm(canvas, paint);
+        } else if (prefRightruler.equals("inch")) {
+            drawRightIn(canvas, paint);
+        }
+
+        String prefAnglemeasure = sharedPreferences.getString("pref_anglemeasure", "off");
+        if (prefAnglemeasure.equals("degree")){
+            drawAngleMeasureDeg(canvas, paint);
+        } else if (prefAnglemeasure.equals("radian")) {
             drawAngleMeasureRad(canvas, paint);
-//        }
+        }
 
 
     }
