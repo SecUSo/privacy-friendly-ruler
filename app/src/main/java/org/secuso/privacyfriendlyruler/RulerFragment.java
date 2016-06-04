@@ -29,6 +29,8 @@ public class RulerFragment extends Fragment {
 //        activity.getWindowManager().getDefaultDisplay().getRealMetrics(displayMetrics);
 //        int softKeyBarHeight = displayMetrics.heightPixels;
         activity.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+
+//        rootView.getDisplay().getMetrics(displayMetrics);
 //        softKeyBarHeight -= displayMetrics.heightPixels;
 
         RulerView rulerView = new RulerView(activity.getBaseContext(), (displayMetrics.ydpi)/25.4, displayMetrics.heightPixels, displayMetrics.widthPixels);

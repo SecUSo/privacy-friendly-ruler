@@ -8,6 +8,7 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.preference.PreferenceManager;
 import android.support.v4.content.ContextCompat;
+import android.util.DisplayMetrics;
 import android.view.View;
 
 import static org.secuso.privacyfriendlyruler.R.color.darkblue;
@@ -25,23 +26,12 @@ public class RulerView extends View {
     int textSize ;
     int db;
     SharedPreferences sharedPreferences;
-//    Activity activity;
 
-    public RulerView(Context context, double ydpmm, double height, double width) {
+    public RulerView(Context context, double ydpmm) {
         super(context);
 
-//        activity = val;
-//        DisplayMetrics displayMetrics = new DisplayMetrics();
-//        activity.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-//        this.getDisplay().getMetrics(displayMetrics);
-//        heightPx = this.getMeasuredHeight();
-//        widthPx = this.getMeasuredWidth();
-//        ydpi = displayMetrics.ydpi;
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
-        dpmm = ydpmm;//ydpi / 25.4;
-        heightPx = height;//displayMetrics.heightPixels;
-        heightmm = heightPx/dpmm;
-        widthPx = width;//displayMetrics.widthPixels;
+        dpmm = ydpmm;
 
         db = ContextCompat.getColor(context, R.color.darkblue);
         textSize = (int)(dpmm *2.5);
@@ -51,6 +41,10 @@ public class RulerView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+
+        heightPx = this.getHeight();
+        widthPx = this.getWidth();
+        heightmm = heightPx/dpmm;
 
         Paint paint = new Paint();
         paint.setAntiAlias(true);
