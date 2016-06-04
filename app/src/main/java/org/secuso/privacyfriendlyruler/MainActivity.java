@@ -35,9 +35,6 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        i++;
-        TextView textView = (TextView) findViewById(R.id.heading_TextView);
-        textView.setText("Main activity called");
     }
 
     @Override

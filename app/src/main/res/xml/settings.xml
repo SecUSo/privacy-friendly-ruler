@@ -25,4 +25,5 @@
         android:entryValues="@array/pref_anglemeasure_evs"
         android:defaultValue="@string/pref_anglemeasure_default" />
     </PreferenceCategory>
+
 </PreferenceScreen>

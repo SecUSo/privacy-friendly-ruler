@@ -3,6 +3,7 @@ package org.secuso.privacyfriendlyruler;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,14 +27,11 @@ public class RulerFragment extends Fragment {
         RelativeLayout rulerLayout = (RelativeLayout) rootView.findViewById(R.id.fragment_ruler);
 
         DisplayMetrics displayMetrics = new DisplayMetrics();
-//        activity.getWindowManager().getDefaultDisplay().getRealMetrics(displayMetrics);
-//        int softKeyBarHeight = displayMetrics.heightPixels;
         activity.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
 
-//        rootView.getDisplay().getMetrics(displayMetrics);
-//        softKeyBarHeight -= displayMetrics.heightPixels;
 
-        RulerView rulerView = new RulerView(activity.getBaseContext(), (displayMetrics.ydpi)/25.4, displayMetrics.heightPixels, displayMetrics.widthPixels);
+        RulerView rulerView = new RulerView(activity.getBaseContext(), (displayMetrics.ydpi)/25.4,
+                PreferenceManager.getDefaultSharedPreferences(activity.getBaseContext()));
         rulerLayout.addView(rulerView);
 
         return rootView;

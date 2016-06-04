@@ -3,12 +3,9 @@ package org.secuso.privacyfriendlyruler;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Canvas;
-import android.app.Activity;
 import android.graphics.Paint;
 import android.graphics.Path;
-import android.preference.PreferenceManager;
 import android.support.v4.content.ContextCompat;
-import android.util.DisplayMetrics;
 import android.view.View;
 
 import static org.secuso.privacyfriendlyruler.R.color.darkblue;
@@ -27,10 +24,10 @@ public class RulerView extends View {
     int db;
     SharedPreferences sharedPreferences;
 
-    public RulerView(Context context, double ydpmm) {
+    public RulerView(Context context, double ydpmm, SharedPreferences prefs) {
         super(context);
 
-        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
+        sharedPreferences = prefs;
         dpmm = ydpmm;
 
         db = ContextCompat.getColor(context, R.color.darkblue);
