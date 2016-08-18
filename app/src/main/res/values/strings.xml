@@ -16,7 +16,9 @@
 
 
     <string name="settings">Settings</string>
-    <string name="action_settings">Settings</string>
+
+    <string name="action_calibration">Calibrate</string>
+    <string name="action_resetcalibration">Reset Calibration</string>
 
     <string name="pref_ruler">Ruler Settings</string>
     <string name="pref_leftruler">Left Ruler</string>

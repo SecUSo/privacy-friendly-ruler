@@ -2,6 +2,7 @@ package org.secuso.privacyfriendlyruler;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
@@ -28,10 +29,11 @@ public class RulerFragment extends Fragment {
 
         DisplayMetrics displayMetrics = new DisplayMetrics();
         activity.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(activity.getBaseContext());
+        float dpmm = prefs.getFloat("dpmm", (float) (displayMetrics.ydpi/25.4));
 
-
-        RulerView rulerView = new RulerView(activity.getBaseContext(), (displayMetrics.ydpi)/25.4,
-                displayMetrics.ydpi/32, PreferenceManager.getDefaultSharedPreferences(activity.getBaseContext()));
+        RulerView rulerView = new RulerView(activity.getBaseContext(), dpmm,
+                dpmm*25.4/32, PreferenceManager.getDefaultSharedPreferences(activity.getBaseContext()));
         rulerLayout.addView(rulerView);
 
         return rootView;
