@@ -17,9 +17,10 @@
     <string name="calibrate">Calibrate</string>
     <string name="measureLineHeading">1. Measure</string>
     <string name="measureLine">Please measure the length of the line below as precisely as possible.</string>
-    <string name="headingEnter">2. Enter the Measured Length</string>
+    <string name="headingEnter">2. Enter Measured Length</string>
     <string name="calibrateConfirmButton">Calibrate</string>
     <string name="noInput">Please input the length of the line.</string>
+    <string name="calibrationDone">Calibration finished.</string>
 
     <string name="settings">Settings</string>
 

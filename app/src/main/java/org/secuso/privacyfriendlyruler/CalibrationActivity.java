@@ -32,13 +32,15 @@ public class CalibrationActivity extends AppCompatActivity {
 
     protected void onConfirm(View v) {
         Context context = getApplicationContext();
-        CharSequence text = getResources().getString(R.string.noInput);
+        CharSequence emptyInputText = getResources().getString(R.string.noInput);
+        CharSequence calibrationDoneText = getResources().getString(R.string.calibrationDone);
         int duration = Toast.LENGTH_SHORT;
-        Toast toast = Toast.makeText(context, text, duration);
+        Toast emptyInputToast = Toast.makeText(context, emptyInputText, duration);
+        Toast calibrationDoneToast = Toast.makeText(context, calibrationDoneText, duration);
 
         String inputText = ((EditText)findViewById(R.id.input)).getText().toString();
 
-        if (inputText.isEmpty()){ toast.show(); }
+        if (inputText.isEmpty()){ emptyInputToast.show(); }
         else {
             float length = Float.parseFloat(inputText);
             boolean inchMode = ((RadioButton)findViewById(R.id.inchRadioButton)).isChecked();
@@ -46,10 +48,11 @@ public class CalibrationActivity extends AppCompatActivity {
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this.getBaseContext());
             float dpmm = 300/length;
             prefs.edit().putFloat("dpmm", dpmm).commit();
+            calibrationDoneToast.show();
+            Intent intent = new Intent();
+            intent.setClass(getBaseContext(), MainActivity.class);
+            startActivityForResult(intent, 0);
         }
-        Intent intent = new Intent();
-        intent.setClass(getBaseContext(), MainActivity.class);
-        startActivityForResult(intent, 0);
     }
 
 }
