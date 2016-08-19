@@ -27,14 +27,10 @@
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/ic_menu_settings"
                 android:title="@string/settings" />
-        </group>
-        <group android:id="@+id/group3">
             <item
                 android:id="@+id/nav_help"
                 android:icon="@drawable/ic_menu_help"
                 android:title="@string/help" />
-        </group>
-        <group android:id="@+id/group4">
             <item
                 android:id="@+id/nav_about"
                 android:icon="@drawable/ic_menu_about"
