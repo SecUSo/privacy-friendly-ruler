@@ -1,10 +1,17 @@
 package org.secuso.privacyfriendlyruler;
 
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.app.FragmentManager;
 import android.preference.PreferenceManager;
+import android.support.v4.app.DialogFragment;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AlertDialog;
 import android.util.DisplayMetrics;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,9 +19,11 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -45,12 +54,43 @@ public class MainActivity extends AppCompatActivity
             this.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
             float dpmm = (float) (displayMetrics.ydpi/25.4);
             prefs.edit().putFloat("dpmm", dpmm).commit();
-            //TODO: Start a first run tutorial here.
+
+
+            WelcomeDialog welcomeDialog = new WelcomeDialog();
+            welcomeDialog.show(this.getSupportFragmentManager(), "WelcomeDialog");
             fragmentManager.beginTransaction().
                     replace(R.id.content_main, new RulerFragment()).commit();
             ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
         } else {
             startLastMode();
+        }
+    }
+
+    public static class WelcomeDialog extends DialogFragment {
+
+        @Override
+        public void onAttach(Activity activity) {
+            super.onAttach(activity);
+        }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            LayoutInflater i = getActivity().getLayoutInflater();
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setView(i.inflate(R.layout.welcome_dialog, null));
+            builder.setIcon(R.mipmap.ic_launcher);
+            builder.setTitle(getActivity().getString(R.string.welcome));
+            builder.setPositiveButton(getActivity().getString(R.string.okay), null);
+            builder.setNegativeButton(getActivity().getString(R.string.viewhelp), new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Intent i = new Intent(getActivity(), HelpActivity.class);
+                    getActivity().startActivity(i);
+                    dialog.cancel();
+                }
+            });
+
+            return builder.create();
         }
     }
 
@@ -90,6 +130,11 @@ public class MainActivity extends AppCompatActivity
             float dpmm = (float) (displayMetrics.ydpi/25.4);
             prefs.edit().putFloat("dpmm", dpmm).commit();
             startLastMode();
+            Context context = getApplicationContext();
+            CharSequence calibrationResetText = getResources().getString(R.string.calibrationReset);
+            int duration = Toast.LENGTH_SHORT;
+            Toast calibrationResetToast = Toast.makeText(context, calibrationResetText, duration);
+            calibrationResetToast.show();
             return true;
         }
 

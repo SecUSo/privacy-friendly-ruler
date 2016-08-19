@@ -112,7 +112,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignStart="@+id/discriptionMeasureHeading" />
 
-    <GridView
+    <View
         android:layout_marginBottom="20dp"
         android:layout_width="300px"
         android:layout_height="5dp"
@@ -121,4 +121,15 @@
         android:layout_centerHorizontal="true"
         android:background="@color/darkblue" />
 
+    <TextView
+        android:id="@+id/calibrationWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/confirmButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/calibrationWarning"
+        android:textAlignment="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
 </RelativeLayout>
