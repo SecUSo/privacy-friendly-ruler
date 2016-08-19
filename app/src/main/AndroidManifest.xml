@@ -33,6 +33,11 @@
             android:name=".HelpActivity"
             android:parentActivityName=".MainActivity">
         </activity>
+        <activity
+            android:name=".CalibrationActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+        </activity>
     </application>
 
 </manifest>

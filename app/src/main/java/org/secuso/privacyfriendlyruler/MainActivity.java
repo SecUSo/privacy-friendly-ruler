@@ -78,9 +78,10 @@ public class MainActivity extends AppCompatActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_calibration) {
-            //TODO
+            Intent intent = new Intent();
+            intent.setClass(getBaseContext(), CalibrationActivity.class);
+            startActivityForResult(intent, 0);
             return true;
         }
         if (id == R.id.action_resetcalibration) {
@@ -88,6 +89,7 @@ public class MainActivity extends AppCompatActivity
             this.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
             float dpmm = (float) (displayMetrics.ydpi/25.4);
             prefs.edit().putFloat("dpmm", dpmm).commit();
+            startLastMode();
             return true;
         }
 
