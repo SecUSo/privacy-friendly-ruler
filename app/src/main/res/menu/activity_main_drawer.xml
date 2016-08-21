@@ -2,24 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
         <group android:id="@+id/group1">
-            <item
-                android:id="@+id/nav_mode"
-                android:title="@string/mode">
-                <menu xmlns:android="http://schemas.android.com/apk/res/android">
                     <item
                         android:id="@+id/nav_ruler"
                         android:icon="@drawable/ic_menu_ruler"
                         android:title="@string/ruler" />
-                    <item
-                        android:id="@+id/nav_gallery"
-                        android:icon="@drawable/ic_menu_gallery"
-                        android:title="@string/gallery" />
-                    <item
-                        android:id="@+id/nav_camera"
-                        android:icon="@drawable/ic_menu_camera"
-                        android:title="@string/camera" />
-                </menu>
-            </item>
 
         </group>
         <group android:id="@+id/group2">

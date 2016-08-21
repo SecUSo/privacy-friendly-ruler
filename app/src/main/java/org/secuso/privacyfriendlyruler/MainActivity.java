@@ -160,18 +160,6 @@ public class MainActivity extends AppCompatActivity
             ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
             prefs.edit().putString("lastMode", "ruler").commit();
             return true;
-        } else if (id == R.id.nav_gallery) {
-            fragmentManager.beginTransaction().
-                    replace(R.id.content_main, new GalleryFragment()).commit();
-            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
-            prefs.edit().putString("lastMode", "gallery").commit();
-            return true;
-        } else if (id == R.id.nav_camera) {
-            fragmentManager.beginTransaction().
-                    replace(R.id.content_main, new CameraFragment()).commit();
-            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
-            prefs.edit().putString("lastMode", "camera").commit();
-            return true;
         } else if (id == R.id.nav_settings) {
             intent.setClass(getBaseContext(), SettingsActivity.class);
             startActivityForResult(intent, 0);
