@@ -85,7 +85,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
-            android:text="mm"
+            android:text="@string/calibrationMM"
             android:checked="true" />
         <RadioButton
             android:id="@+id/inchRadioButton"
@@ -94,7 +94,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
-            android:text="inch" />
+            android:text="@string/calibrationInch" />
     </RadioGroup>
 
     <Button
