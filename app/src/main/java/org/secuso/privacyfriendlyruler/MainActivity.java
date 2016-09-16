@@ -48,11 +48,11 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        if (!prefs.contains("lastMode")){
+        if (!prefs.contains("lastMode")) {
             prefs.edit().putString("lastMode", "ruler").commit();
             DisplayMetrics displayMetrics = new DisplayMetrics();
             this.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-            float dpmm = (float) (displayMetrics.ydpi/25.4);
+            float dpmm = (float) (displayMetrics.ydpi / 25.4);
             prefs.edit().putFloat("dpmm", dpmm).commit();
 
 
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity
             LayoutInflater i = getActivity().getLayoutInflater();
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
             builder.setView(i.inflate(R.layout.welcome_dialog, null));
-            builder.setIcon(R.mipmap.ic_launcher);
+            builder.setIcon(R.mipmap.icon_drawer);
             builder.setTitle(getActivity().getString(R.string.welcome));
             builder.setPositiveButton(getActivity().getString(R.string.okay), null);
             builder.setNegativeButton(getActivity().getString(R.string.viewhelp), new DialogInterface.OnClickListener() {
@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -127,7 +128,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.action_resetcalibration) {
             DisplayMetrics displayMetrics = new DisplayMetrics();
             this.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
-            float dpmm = (float) (displayMetrics.ydpi/25.4);
+            float dpmm = (float) (displayMetrics.ydpi / 25.4);
             prefs.edit().putFloat("dpmm", dpmm).commit();
             startLastMode();
             Context context = getApplicationContext();

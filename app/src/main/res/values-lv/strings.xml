@@ -4,10 +4,8 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-
     <string name="app_name_long">Privacy Friendly Lineāls</string>
     <string name="version_number">Versija 1.0</string>
-
 
     <string name="mode">Režīms</string>
     <string name="ruler">Lineāls</string>
@@ -99,11 +97,11 @@
     <string name="pref_angles_summary">Ekrāna kreisajā pusē Jūs varat likt uzrādīt leņķā mēri grādos vai radiānos.</string>
     <string name="help_intro">Aplikācija Privacy Friendly Lineāls pārvērš jūsu viedtālruni pār lineālu gadijumā ja Jums vajag ātri kaut ko izmērīt.</string>
 
-
     <string name="about">Informācija</string>
-    <string name="about_author">Autors: Roberts Kolosovs un līdzstrādnieki.</string>
+    <string name="about_author">Autors: </string>
+    <string name="about_author_contributors">un līdzstrādnieki.</string>
     <string name="about_affiliation">Sadarbībā ar</string>
-    <string name="privacy_friendly">Šī aplikācija ir no Privacy Friendly Apps aplikāciju kataloga.</string>
+    <string name="privacy_friendly">Šī lietotne ir no Technische Universität Darmstadt izstrādātā Privacy Friendly Apps lietotņu kataloga. Bilžu autortiesības pieder TU Darmstadt un Google Inc.</string>
     <string name="more_info">Papildus informācija (angļu valodā):</string>
     <string name="url"><a href="https://www.secuso.org/pfa">https://www.secuso.org</a></string>
 

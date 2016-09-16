@@ -4,32 +4,30 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-
     <string name="app_name_long">Privacy Friendly Линейка</string>
     <string name="version_number">Версия 1.0</string>
 
-
-    <string name="mode">Модус</string>
+    <string name="mode">Режим</string>
     <string name="ruler">Линейка</string>
-    <string name="gallery">Фотография из галиреи</string>
+    <string name="gallery">Фотография из галереи</string>
     <string name="camera">Снять фотографию</string>
 
     <string name="calibrate">Калибрировать</string>
     <string name="measureLineHeading">1. Отмерить</string>
-    <string name="measureLine">Отмерте длинну линии так точно как возможно.</string>
+    <string name="measureLine">Отмерьте длину линии так точно как возможно.</string>
     <string name="headingEnter">2. Ввести длину линии</string>
     <string name="calibrateConfirmButton">Калибрировать</string>
     <string name="noInput">Введите длину линии.</string>
-    <string name="calibrationDone">Калибрированя завершено.</string>
+    <string name="calibrationDone">Калибрирование завершено.</string>
     <string name="calibrationMM">мм</string>
-    <string name="calibrationInch">дютмы</string>
-    <string name="calibrationWarning">Мануальная калибрацыя не устраняет неточносьти вызваные округлением. Не изпользуите это приложение как професионально калиброванный инструмент.</string>
+    <string name="calibrationInch">дюймы</string>
+    <string name="calibrationWarning">Ручная калибрация не устраняет неточности вызваные округлением. Не используйте это приложение как профессионально калиброванный инструмент.</string>
 
     <string name="settings">Установка</string>
 
     <string name="action_calibration">Калибрировать</string>
-    <string name="action_resetcalibration">Сбросить калибрацыю</string>
-    <string name="calibrationReset">Калибрацыя сброшина.</string>
+    <string name="action_resetcalibration">Сбросить калибрацию</string>
+    <string name="calibrationReset">Калибрация сброшена.</string>
 
     <string name="pref_ruler">Установка линейки</string>
     <string name="pref_leftruler">Левая линейка</string>
@@ -37,7 +35,7 @@
     <string-array name="pref_leftruler_entries">
         <item>см</item>
         <item>дюйм</item>
-        <item>ничево</item>
+        <item>ничего</item>
     </string-array>
     <string-array name="pref_leftruler_evs">
         <item>cm</item>
@@ -51,7 +49,7 @@
     <string-array name="pref_rightruler_entries">
         <item>см</item>
         <item>дюйм</item>
-        <item>ничево</item>
+        <item>ничего</item>
     </string-array>
     <string-array name="pref_rightruler_evs">
         <item>cm</item>
@@ -65,7 +63,7 @@
     <string-array name="pref_anglemeasure_entries">
         <item>градус</item>
         <item>радиан</item>
-        <item>ничево</item>
+        <item>ничего</item>
     </string-array>
     <string-array name="pref_anglemeasure_evs">
         <item>degree</item>
@@ -75,36 +73,36 @@
     <string name="pref_anglemeasure_default">off</string>
 
     <string name="welcome">Добро пожаловать</string>
-    <string name="field_select_description_headline">Добро пажаловать в Privacy Friendly Линейку</string>
-    <string name="field_select_description">Это приложенйе даёт вам линейку для измереня дистанций и углов.</string>
+    <string name="field_select_description_headline">Добро пожаловать в Privacy Friendly Линейку</string>
+    <string name="field_select_description">Это приложение предоставляет линейку для измерения расстояний и углов.</string>
     <string name="difficulty_description_headline">Установки</string>
-    <string name="difficulty_description">Вы можете изменить используюмаю единицу измерения в меню установок. В меню деиствий Вы можете калибрировать линейку (не обезательно).</string>
+    <string name="difficulty_description">Вы можете изменить используемую единицу измерения в меню установок. В меню действий Вы можете калибрировать линейку (не обязательно).</string>
     <string name="okay">Одобрить</string>
-    <string name="viewhelp">Помошь</string>
+    <string name="viewhelp">Помощь</string>
 
-    <string name="help">Помощ</string>
+    <string name="help">Помощь</string>
     <string name="help_overview_heading">Обзор</string>
-    <string name="help_calibration">Мануальная Калибрацыя</string>
-    <string name="help_disclaimer">Предупрежденье</string>
-    <string name="help_category_calibration">Калибрацыя</string>
-    <string name="pref_calibration_summary">Вы можете мануально скалибрировать линейку через меню деиствий.</string>
-    <string name="pref_disclaimer_summary">Это приложенье не евляетса професионально калибрированым измерительным устройством. Technische Universität Darmstadt не ответствен за ущерб созданый пользуяс этим приложеньем.</string>
+    <string name="help_calibration">Ручная Калибрация</string>
+    <string name="help_disclaimer">Предупреждение</string>
+    <string name="help_category_calibration">Калибрация</string>
+    <string name="pref_calibration_summary">Вы можете вручную откалибрировать линейку через меню деиствий.</string>
+    <string name="pref_disclaimer_summary">Это приложение не является профессионально калибрированым измерительным устройством. Technische Universität Darmstadt не ответствен за ущерб причиненный при использовании этого приложения.</string>
     <string name="help_privacy_heading">О частной информации</string>
-    <string name="help_permissions_heading">Позволенье</string>
-    <string name="help_permissions_description">Privacy Friendly Линейка не пользуетса позволеньями.</string>
+    <string name="help_permissions_heading">Разрешения</string>
+    <string name="help_permissions_description">Privacy Friendly Линейка не требует разрешений.</string>
     <string name="help_category_options">Установка</string>
-    <string name="help_units">Меры измерения</string>
-    <string name="pref_units_summary">Вы можете включить саньтиметровою или дюймовою линейку на левой и правой стороне экрана. Обе линейки могут быть установлены независемо друг от друга.</string>
-    <string name="help_angles">Меры измерения углов</string>
-    <string name="pref_angles_summary">Вы можете включить угломер на левои стороне экрана в мере градусов или радианов.</string>
-    <string name="help_intro">Приложенья Privacy Friendly Линейка превращяет Ваш телефон в линейку в случае, если Вам нужно быстро чтото помереть.</string>
+    <string name="help_units">Единицы измерения</string>
+    <string name="pref_units_summary">Вы можете включить сантиметровую или дюймовую линейку на левой и правой стороне экрана. Обе линейки могут быть установлены независимо друг от друга.</string>
+    <string name="help_angles">Единицы измерения углов</string>
+    <string name="pref_angles_summary">Вы можете включить угломер на левой стороне экрана в мере градусов или радианов.</string>
+    <string name="help_intro">Приложение Privacy Friendly Линейка превращает Ваш телефон в линейку в случае, если Вам нужно быстро что-то измерить.</string>
 
-
-    <string name="about">Информацыя</string>
-    <string name="about_author">Автор: Roberts Kolosovs и содействующие.</string>
-    <string name="about_affiliation">В кооперации с</string>
-    <string name="privacy_friendly">Из каталога Privacy Friendly Apps.</string>
-    <string name="more_info">Даполнителная информация (на английском языке):</string>
+    <string name="about">Информация</string>
+    <string name="about_author">Автор: </string>
+    <string name="about_author_contributors">и сотрудники.</string>
+    <string name="about_affiliation">В сотрудничестве с</string>
+    <string name="privacy_friendly">Это программа принадлежит к группе Privacy Friendly Apps, разработанных Technische Universität Darmstadt. Исходный код лицензирован под GPLv3. Право на использование изображений принадлежит TU Darmstadt и Google Inc.</string>
+    <string name="more_info">Дополнительная информация (на английском языке):</string>
     <string name="url"><a href="https://www.secuso.org/pfa">https://www.secuso.org</a></string>
 
 </resources>
