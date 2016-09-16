@@ -67,7 +67,9 @@
         android:minWidth="50dp"
         android:layout_below="@+id/space2"
         android:layout_alignStart="@+id/confirmButton"
-        android:minHeight="10dp" />
+        android:minHeight="10dp"
+        android:editable="false"
+        android:maxLength="6" />
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"

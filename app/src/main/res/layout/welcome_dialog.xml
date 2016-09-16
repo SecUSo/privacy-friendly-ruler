@@ -12,31 +12,20 @@
         <Space
             android:layout_width="10dp"
             android:layout_height="20dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="@string/field_select_description_headline"
-            style="@style/Base.DialogWindowTitle.AppCompat"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
+            android:gravity="left"
             android:text="@string/field_select_description"/>
         <Space
             android:layout_width="20dp"
             android:layout_height="20dp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="@string/difficulty_description_headline"
-            style="@style/Base.DialogWindowTitle.AppCompat"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
+            android:gravity="left"
             android:text="@string/difficulty_description"/>
     </LinearLayout>
 </ScrollView>

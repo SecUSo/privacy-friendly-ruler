@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="@string/pref_ruler">
     <ListPreference android:id="@+id/pref_leftruler"
         android:key="pref_leftruler"
         android:title="@string/pref_leftruler"
@@ -24,6 +23,5 @@
         android:entries="@array/pref_anglemeasure_entries"
         android:entryValues="@array/pref_anglemeasure_evs"
         android:defaultValue="@string/pref_anglemeasure_default" />
-    </PreferenceCategory>
 
 </PreferenceScreen>

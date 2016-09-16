@@ -45,6 +45,7 @@ public class CalibrationActivity extends AppCompatActivity {
             float length = Float.parseFloat(inputText);
             boolean inchMode = ((RadioButton)findViewById(R.id.inchRadioButton)).isChecked();
             if (inchMode) {length = (float)(length * 25.4);}
+            length = Math.min(40, Math.max(3, length));
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this.getBaseContext());
             float dpmm = 300/length;
             prefs.edit().putFloat("dpmm", dpmm).commit();
