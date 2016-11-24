@@ -1,12 +1,10 @@
 ## Privacy Friendly Ruler
 
-Privacy Friendly Ruler turns the phone screen into a ruler for quick measurments on the go. It also allows to measure size of things in a 2D scene provided a comon reference object like a coin is also present.
-
-This app is optimized regarding the user's privacy. It doesn't use any tracking mechanisms, neither it displays any advertisement.
+Privacy Friendly Ruler turns the device screen into a ruler for quick measurments on the go. The unit of the ruler can be set to inch or centimeters. This app is optimized regarding the user's privacy. It doesn't use any tracking mechanisms, neither it displays any advertisement.
 
 ## Motivation
 
-Privacy Friendly Ruler belongs to the group of Privacy Friendly Apps and has been developed to provide a privacy friendly measuring application.
+Privacy Friendly Ruler belongs to the Privacy Friendly Apps group and has been developed to provide a privacy friendly measuring application.
 
 ## Download and more Information
 
@@ -14,7 +12,7 @@ Android Studio is required if further development is intended.
 
 ## API Reference
 
-Mininum SDK: 17 Target SDK: 23 
+Mininum SDK: 17 Target SDK: 25 
 
 ## License
 
