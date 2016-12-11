@@ -186,14 +186,6 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction().
                     replace(R.id.content_main, new RulerFragment()).commit();
             ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
-        } else if (lastMode.equals("gallery")) {
-            fragmentManager.beginTransaction().
-                    replace(R.id.content_main, new GalleryFragment()).commit();
-            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
-        } else { //if (lastMode.equals("camera"))
-            fragmentManager.beginTransaction().
-                    replace(R.id.content_main, new CameraFragment()).commit();
-            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
         }
     }
 }
