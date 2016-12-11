@@ -1,10 +1,13 @@
 ## Privacy Friendly Ruler
 
-Privacy Friendly Ruler turns the device screen into a ruler for quick measurments on the go. The unit of the ruler can be set to inch or centimeters. This app is optimized regarding the user's privacy. It doesn't use any tracking mechanisms, neither it displays any advertisement.
+Privacy Friendly Ruler turns the phone screen into a ruler for quick measurments on the go.
+
+This app is optimized regarding the user's privacy. It doesn't use any tracking mechanisms, neither it displays any advertisement.<br />
+Please be aware that Privacy Friendly Ruler is not a profesionally calibrated measuring device. This App can be manualy calibrated which may minimize the error. However, depending on the device there still can be rounding errors.
 
 ## Motivation
 
-Privacy Friendly Ruler belongs to the Privacy Friendly Apps group and has been developed to provide a privacy friendly measuring application.
+Privacy Friendly Ruler belongs to the group of Privacy Friendly Apps and has been developed to provide a privacy friendly measuring application.
 
 ## Download and more Information
 
@@ -40,4 +43,5 @@ App-Icon: <br />
 Markus Hau<br />
 
 Github-Users: <br />
-rkolosovs
+rkolosovs <br />
+yonjuni
