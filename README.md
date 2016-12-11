@@ -3,7 +3,7 @@
 Privacy Friendly Ruler turns the phone screen into a ruler for quick measurments on the go.
 
 This app is optimized regarding the user's privacy. It doesn't use any tracking mechanisms, neither it displays any advertisement.<br />
-Please be aware that Privacy Friendly Ruler is not a profesionally calibrated measuring device. This App can be manualy calibrated which may minimize the error. However, depending on the device there still can be rounding errors.
+Please be aware that Privacy Friendly Ruler is not a professionally calibrated measuring device. This App can be manually calibrated which may minimize the error. However, depending on the device there still can be rounding errors.
 
 ## Motivation
 
