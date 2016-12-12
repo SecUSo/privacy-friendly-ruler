@@ -77,6 +77,9 @@
     <string name="field_select_description">Diese App stellt Ihnen ein Lineal und Winkelmesser auf Ihrem Bildschirm bereit.</string>
     <string name="difficulty_description_headline">Einstellungen</string>
     <string name="difficulty_description">Sie können die Maßeinheiten in den Einstellungen ändern. In dem Aktionsmenü können Sie das Lineal kalibrieren (optional).</string>
+    <string name="disclaimer">Diese App ist kein professionell geeichtes Messgerät. Die App kann kalibriert werden, dies minimiert zwar den Fehler, allerdings kann es abhängig vom Gerät trotzdem zu Rundungsfehlern kommen.</string>
+    <string name="disclaimer_check">Ich habe den Disclaimer über potentielle Rundungsfehler gelesen.</string>
+    <string name="disclaimer_check_toast">Bitte markieren Sie, dass Sie den Disclaimer gelesen haben.</string>
     <string name="okay">Okay</string>
     <string name="viewhelp">Hilfe Anzeigen</string>
 

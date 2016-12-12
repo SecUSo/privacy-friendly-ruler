@@ -78,6 +78,9 @@
     <string name="difficulty_description_headline">Iestatījumi</string>
     <string name="difficulty_description">Iestatījumos Jūs varat mainīt lineālos uzrādītās mērvienības. Action izvelnē Jūs varat kalibrēt lineālu (nav obligāti).</string>
     <string name="okay">Labi</string>
+    <string name="disclaimer">Šī lietotne nav profesionāli kalibrēta mērīšanas ierīce. Šo lietotni var manuāli kalibrēt, tādā veidā mazinot kļūdu izmēru. Neskatoties uz to atkarībā no ierīces tik un tā var rasties apaļošanas kļūdas.</string>
+    <string name="disclaimer_check">Es izlasiju brīdinājumu par iespējamām apaļošanas kļūdām.</string>
+    <string name="disclaimer_check_toast"></string>
     <string name="viewhelp">Palīdzība</string>
 
     <string name="help">Palīdzība</string>
