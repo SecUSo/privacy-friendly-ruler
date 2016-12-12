@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity
                     replace(R.id.content_main, new RulerFragment()).commit();
             ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
         } else {
-            //startLastMode();
+            startLastMode();
         }
 
     }
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity
             this.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
             float dpmm = (float) (displayMetrics.ydpi / 25.4);
             prefs.edit().putFloat("dpmm", dpmm).commit();
-            //startLastMode();
+            startLastMode();
             Context context = getApplicationContext();
             CharSequence calibrationResetText = getResources().getString(R.string.calibrationReset);
             int duration = Toast.LENGTH_SHORT;
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onResume() {
         super.onResume();
-        // startLastMode();
+        startLastMode();
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -145,12 +145,12 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-//    private void startLastMode() {
-//        String lastMode = prefs.getString("lastMode", "ruler");
-//        if (lastMode.equals("ruler")) {
-//            fragmentManager.beginTransaction().
-//                    replace(R.id.content_main, new RulerFragment()).commit();
-//            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
-//        }
-//    }
+    private void startLastMode() {
+        String lastMode = prefs.getString("lastMode", "ruler");
+        if (lastMode.equals("ruler")) {
+            fragmentManager.beginTransaction().
+                    replace(R.id.content_main, new RulerFragment()).commit();
+            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
+        }
+    }
 }
