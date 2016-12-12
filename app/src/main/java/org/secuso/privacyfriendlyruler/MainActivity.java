@@ -1,28 +1,20 @@
 package org.secuso.privacyfriendlyruler;
 
-import android.app.Activity;
-import android.app.Dialog;
+import android.app.FragmentManager;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.app.FragmentManager;
 import android.preference.PreferenceManager;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AlertDialog;
-import android.util.DisplayMetrics;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
+import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
@@ -64,34 +56,7 @@ public class MainActivity extends AppCompatActivity
         } else {
             startLastMode();
         }
-    }
 
-    public static class WelcomeDialog extends DialogFragment {
-
-        @Override
-        public void onAttach(Activity activity) {
-            super.onAttach(activity);
-        }
-
-        @Override
-        public Dialog onCreateDialog(Bundle savedInstanceState) {
-            LayoutInflater i = getActivity().getLayoutInflater();
-            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-            builder.setView(i.inflate(R.layout.welcome_dialog, null));
-            builder.setIcon(R.mipmap.icon_drawer);
-            builder.setTitle(getActivity().getString(R.string.welcome));
-            builder.setPositiveButton(getActivity().getString(R.string.okay), null);
-            builder.setNegativeButton(getActivity().getString(R.string.viewhelp), new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    Intent i = new Intent(getActivity(), HelpActivity.class);
-                    getActivity().startActivity(i);
-                    dialog.cancel();
-                }
-            });
-
-            return builder.create();
-        }
     }
 
     @Override
@@ -185,14 +150,6 @@ public class MainActivity extends AppCompatActivity
         if (lastMode.equals("ruler")) {
             fragmentManager.beginTransaction().
                     replace(R.id.content_main, new RulerFragment()).commit();
-            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
-        } else if (lastMode.equals("gallery")) {
-            fragmentManager.beginTransaction().
-                    replace(R.id.content_main, new GalleryFragment()).commit();
-            ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
-        } else { //if (lastMode.equals("camera"))
-            fragmentManager.beginTransaction().
-                    replace(R.id.content_main, new CameraFragment()).commit();
             ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
         }
     }

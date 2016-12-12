@@ -21,7 +21,7 @@
     <string name="calibrationDone">Calibration finished.</string>
     <string name="calibrationMM">mm</string>
     <string name="calibrationInch">inch</string>
-    <string name="calibrationWarning">Manual calibration does not eliminate inaccuracies due to rounding. Do not use this app as a professionally calibrated measuring device.</string>
+    <string name="calibrationWarning">Manual calibration can not eliminate all inaccuracies due to rounding.</string>
 
     <string name="settings">Settings</string>
 
@@ -77,6 +77,9 @@
     <string name="field_select_description">This app provides rulers and angle measures on Your screen.</string>
     <string name="difficulty_description_headline">Settings</string>
     <string name="difficulty_description">You can change the units of measurement in the settings. In the action menu You can calibrate the ruler (optional).</string>
+    <string name="disclaimer">This App is not a professionally calibrated measuring device. This App can be manually calibrated which may minimize the error. However, depending on the device there still could be rounding errors.</string>
+    <string name="disclaimer_check">I have read the disclaimer about potential rounding issues.</string>
+    <string name="disclaimer_check_toast">Please check that you have read the disclaimer.</string>
     <string name="okay">Okay</string>
     <string name="viewhelp">View Help</string>
 
@@ -86,7 +89,6 @@
     <string name="help_disclaimer">Disclaimer</string>
     <string name="help_category_calibration">Calibration</string>
     <string name="pref_calibration_summary">You can manually calibrate the ruler via the "calibrate" option in the action menu.</string>
-    <string name="pref_disclaimer_summary">This app is not a professionally calibrated measuring device. Technische Universität Darmstadt is not liable for any damage caused by use of this app.</string>
     <string name="help_privacy_heading">Privacy Info</string>
     <string name="help_permissions_heading">Permissions</string>
     <string name="help_permissions_description">Privacy Friendly Ruler does not use any permissions.</string>

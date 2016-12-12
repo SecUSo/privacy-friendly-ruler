@@ -23,7 +23,7 @@
             android:summary="@string/pref_calibration_summary"
             android:selectable="false"/>
         <Preference android:title="@string/help_disclaimer"
-            android:summary="@string/pref_disclaimer_summary"
+            android:summary="@string/disclaimer"
             android:selectable="false"/>
     </PreferenceCategory>
 

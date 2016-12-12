@@ -9,10 +9,6 @@
         android:layout_height="wrap_content"
         android:padding="@dimen/activity_horizontal_margin">
 
-        <Space
-            android:layout_width="10dp"
-            android:layout_height="20dp" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -27,5 +23,53 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:text="@string/difficulty_description"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/disclaimer"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="10dp" />
+
+        <CheckBox
+            android:id="@+id/readCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disclaimer_check"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/helpButton"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/viewhelp"/>
+
+            <Button
+                android:id="@+id/okayButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?selectableItemBackgroundBorderless"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/okay"/>
+        </LinearLayout>
+
     </LinearLayout>
+
+
+
+
 </ScrollView>
