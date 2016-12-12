@@ -105,7 +105,6 @@
         android:text="@string/calibrateConfirmButton"
         android:id="@+id/confirmButton"
         android:layout_marginTop="20dp"
-        android:onClick="onConfirm"
         android:background="@drawable/button_normal"
         android:textColor="@color/white"
         android:paddingLeft="20dp"
