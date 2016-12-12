@@ -21,7 +21,7 @@
     <string name="calibrationDone">Kalibrācija pabeigta.</string>
     <string name="calibrationMM">mm</string>
     <string name="calibrationInch">collas</string>
-    <string name="calibrationWarning">Manuāla kalibrācija nenovērš noapaļojumkļūdu radītās neprecizitātes. Nelietojiet šo aplikāciju kā profisionāli kalibrētu mērierīci.</string>
+    <string name="calibrationWarning">Manuāla kalibrācija nenovērš noapaļojumkļūdu radītās neprecizitātes.</string>
 
     <string name="settings">Iestatījumi</string>
 
@@ -89,7 +89,6 @@
     <string name="help_disclaimer">Brīdinājums</string>
     <string name="help_category_calibration">Kalibrācija</string>
     <string name="pref_calibration_summary">Jūs varat manuāli kalibrēt lineālu caur action izvelni.</string>
-    <string name="pref_disclaimer_summary">Šī aplikācija nav profesionāli kalibrēts mērinstruments. Technische Universität Darmstadt nav atbildīga par aplikācijas lietošanas izraisītiem bojājumiem.</string>
     <string name="help_privacy_heading">Informācija par privātsfēru</string>
     <string name="help_permissions_heading">Atļaujas</string>
     <string name="help_permissions_description">Privacy Friendly Lineāls neizmanto īpašas atļaujas.</string>

@@ -21,7 +21,7 @@
     <string name="calibrationDone">Калибрирование завершено.</string>
     <string name="calibrationMM">мм</string>
     <string name="calibrationInch">дюймы</string>
-    <string name="calibrationWarning">Ручная калибрация не устраняет неточности вызваные округлением. Не используйте это приложение как профессионально калиброванный инструмент.</string>
+    <string name="calibrationWarning">Ручная калибрация не устраняет неточности вызваные округлением.</string>
 
     <string name="settings">Установка</string>
 
@@ -89,7 +89,6 @@
     <string name="help_disclaimer">Предупреждение</string>
     <string name="help_category_calibration">Калибрация</string>
     <string name="pref_calibration_summary">Вы можете вручную откалибрировать линейку через меню деиствий.</string>
-    <string name="pref_disclaimer_summary">Это приложение не является профессионально калибрированым измерительным устройством. Technische Universität Darmstadt не ответствен за ущерб причиненный при использовании этого приложения.</string>
     <string name="help_privacy_heading">О частной информации</string>
     <string name="help_permissions_heading">Разрешения</string>
     <string name="help_permissions_description">Privacy Friendly Линейка не требует разрешений.</string>

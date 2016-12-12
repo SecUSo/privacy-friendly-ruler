@@ -21,7 +21,7 @@
     <string name="calibrationDone">Kalibrierung abgeschlossen.</string>
     <string name="calibrationMM">mm</string>
     <string name="calibrationInch">zoll</string>
-    <string name="calibrationWarning">Manuelle Kalibrierung eliminiert die rundungsbedingten Ungenauigkeiten nicht. Benutzen Sie diese App nicht wie ein geeichtes Messgerät.</string>
+    <string name="calibrationWarning">Manuelle Kalibrierung eliminiert die rundungsbedingten Ungenauigkeiten nicht.</string>
 
     <string name="settings">Einstellungen</string>
 
@@ -89,7 +89,6 @@
     <string name="help_disclaimer">Disclaimer</string>
     <string name="help_category_calibration">Kalibrierung</string>
     <string name="pref_calibration_summary">Sie können das Lineal manuell mit der "Kalibrieren" Option im Aktionsmenü kalibirieren.</string>
-    <string name="pref_disclaimer_summary">Diese App ist kein kalibriertes Messgerät. Die Technische Unitersität Darmstadt haftet nicht für Schäden die durch unsachgemäße Nutzung dieser App entstehen.</string>
     <string name="help_privacy_heading">Datenschutzinfo</string>
     <string name="help_permissions_heading">Berechtigungen</string>
     <string name="help_permissions_description">Privacy Friendly Lineal benutzt keine speziellen Berechtigungen.</string>
