@@ -1,0 +1,110 @@
+﻿<resources>
+    <string name="app_name">Ruler</string>
+
+    <string name="navigation_drawer_open">ナビゲーションドロワーを開く</string>
+    <string name="navigation_drawer_close">ナビゲーションドロワーを閉じる</string>
+
+    <string name="app_name_long">Privacy Friendly Ruler</string>
+    <string name="version_number">Version 1.0</string>
+
+    <string name="mode">モード</string>
+    <string name="ruler">ルーラー</string>
+    <string name="gallery">ギャラリーから画像</string>
+    <string name="camera">写真を撮る</string>
+
+    <string name="calibrate">較正</string>
+    <string name="measureLineHeading">1. 測定</string>
+    <string name="measureLine">下の線の長さをできるだけ正確に測定してください。</string>
+    <string name="headingEnter">2. 測定した長さを入力</string>
+    <string name="calibrateConfirmButton">較正</string>
+    <string name="noInput">線の長さを入力してください。</string>
+    <string name="calibrationDone">較正が終了しました。</string>
+    <string name="calibrationMM">mm</string>
+    <string name="calibrationInch">インチ</string>
+    <string name="calibrationWarning">手動較正で、丸めによる誤差をすべて取り除くことはできません。</string>
+
+    <string name="settings">設定</string>
+
+    <string name="action_calibration">較正</string>
+    <string name="action_resetcalibration">較正をリセット</string>
+    <string name="calibrationReset">較正をリセットしました。</string>
+
+    <string name="pref_ruler">ルーラー設定</string>
+    <string name="pref_leftruler">左のルーラー</string>
+    <string name="pref_leftruler_verbose">左のルーラーをどのように表示しますか?</string>
+    <string-array name="pref_leftruler_entries">
+        <item>cm</item>
+        <item>インチ</item>
+        <item>オフ</item>
+    </string-array>
+    <string-array name="pref_leftruler_evs">
+        <item>cm</item>
+        <item>inch</item>
+        <item>off</item>
+    </string-array>
+    <string name="pref_leftruler_default">cm</string>
+
+    <string name="pref_rightruler">右のルーラー</string>
+    <string name="pref_rightruler_verbose">右のルーラーをどのように表示しますか?</string>
+    <string-array name="pref_rightruler_entries">
+        <item>cm</item>
+        <item>インチ</item>
+        <item>オフ</item>
+    </string-array>
+    <string-array name="pref_rightruler_evs">
+        <item>cm</item>
+        <item>inch</item>
+        <item>off</item>
+    </string-array>
+    <string name="pref_rightruler_default">inch</string>
+
+    <string name="pref_anglemeasure">角度の測定</string>
+    <string name="pref_anglemeasure_verbose">角度測定のスケールをオンにしますか?</string>
+    <string-array name="pref_anglemeasure_entries">
+        <item>度</item>
+        <item>ラジアン</item>
+        <item>オフ</item>
+    </string-array>
+    <string-array name="pref_anglemeasure_evs">
+        <item>degree</item>
+        <item>radian</item>
+        <item>off</item>
+    </string-array>
+    <string name="pref_anglemeasure_default">off</string>
+
+    <string name="welcome">ようこそ</string>
+    <string name="field_select_description_headline">プライバシーフレンドリーなルーラーへようこそ</string>
+    <string name="field_select_description">このアプリは画面上でルーラーと角度の測定を提供します。</string>
+    <string name="difficulty_description_headline">設定</string>
+    <string name="difficulty_description">設定で測定の単位を変更することができます。 アクションメニューで、ルーラーを較正することができます (オプション)。</string>
+    <string name="disclaimer">このアプリは専門的に較正された測定機器ではありません。 このアプリは手動で較正して、誤差を最小限に抑えることができます。 ただし、デバイスによっては、丸め誤差が発生する可能性があります。</string>
+    <string name="disclaimer_check">潜在的な丸めの問題に関する免責事項を読みました。</string>
+    <string name="disclaimer_check_toast">免責事項を読んだことをチェックしてください。</string>
+    <string name="okay">OK</string>
+    <string name="viewhelp">ヘルプを表示</string>
+
+    <string name="help">ヘルプ</string>
+    <string name="help_overview_heading">概要</string>
+    <string name="help_calibration">手動較正</string>
+    <string name="help_disclaimer">免責事項</string>
+    <string name="help_category_calibration">較正</string>
+    <string name="pref_calibration_summary">アクションメニューの「較正」オプションを使用して、ルーラーを手動で較正することができます。</string>
+    <string name="help_privacy_heading">プライバシー情報</string>
+    <string name="help_permissions_heading">アクセス許可</string>
+    <string name="help_permissions_description">プライバシーフレンドリーなルーラーは、アクセス許可を何も使用しません。</string>
+    <string name="help_category_options">設定</string>
+    <string name="help_units">測定の単位</string>
+    <string name="pref_units_summary">画面の左側と右側に cm ルーラー、インチルーラーを表示、またはルーラーを表示しないことができます。 両側のルーラーは、オプションメニューで別々に設定することができます。</string>
+    <string name="help_angles">角度の測定</string>
+    <string name="pref_angles_summary">画面の左側に、度またはラジアンで角度の測定を表示できます。</string>
+    <string name="help_intro">プライバシーフレンドリーなルーラーアプリは、お使いの電話をルーラーに変えて、すばやく測定することができます。</string>
+
+    <string name="about">アプリについて</string>
+    <string name="about_author">作者: </string>
+    <string name="about_author_contributors">と貢献者。</string>
+    <string name="about_affiliation">提携</string>
+    <string name="privacy_friendly">このアプリケーションは、ダルムシュタット工科大学 (Technische Universität Darmstadt, Germany) が開発したプライバシーフレンドリーアプリのグループに属しています。ソースコードは GPLv3 の下でライセンスされます。画像の著作権は TU Darmstadt および Google Inc.</string>
+    <string name="more_info">さらに詳しい情報は以下でご覧ください:</string>
+    <string name="url"><a href="https://www.secuso.org/pfa">https://www.secuso.org</a></string>
+
+</resources>
