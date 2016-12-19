@@ -5,12 +5,10 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="app_name_long">Privacy Friendly Lineal</string>
-    <string name="version_number">Version 1.0</string>
+    <string name="version_number">Version 1.0.1</string>
 
     <string name="mode">Modus</string>
     <string name="ruler">Lineal</string>
-    <string name="gallery">Bild aus der Galerie</string>
-    <string name="camera">Bild von der Kamera</string>
 
     <string name="calibrate">Kalibrieren</string>
     <string name="measureLineHeading">1. Messen</string>
@@ -94,7 +92,7 @@
     <string name="help_permissions_description">Privacy Friendly Lineal benutzt keine speziellen Berechtigungen.</string>
     <string name="help_category_options">Einstellungen</string>
     <string name="help_units">Maßeinheiten</string>
-    <string name="pref_units_summary">Sie können ein Lineal mit Zentimeter-Skala, Zoll-Skala oder gar kein Lineal auf der linken und der rechten Bildschirmseite anzeigen lassen. Beide Lineale können seperat in den Einstellungen gesetzt werden.</string>
+    <string name="pref_units_summary">Sie können ein Lineal mit Zentimeter-Skala, Zoll-Skala oder kein Lineal auf der linken und der rechten Bildschirmseite anzeigen lassen. Beide Lineale können separat in den Einstellungen gesetzt werden.</string>
     <string name="help_angles">Winkelmesser</string>
     <string name="pref_angles_summary">Sie können einen Winkelmesser in Grad oder Radiant auf der linken Bildschirmseite anzeigen lassen.</string>
     <string name="help_intro">Die Privacy Friendly Lineal App macht Ihr Smartphone zu einem Lineal um Messungen vorzunehmen, wenn Sie gerade kein Messgerät zur Hand haben.</string>

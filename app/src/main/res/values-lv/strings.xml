@@ -5,12 +5,10 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="app_name_long">Privacy Friendly Lineāls</string>
-    <string name="version_number">Versija 1.0</string>
+    <string name="version_number">Versija 1.0.1</string>
 
     <string name="mode">Režīms</string>
     <string name="ruler">Lineāls</string>
-    <string name="gallery">Fotogrāfija no galerijas</string>
-    <string name="camera">Fotogrāfija no kameras</string>
 
     <string name="calibrate">Kalibrēt</string>
     <string name="measureLineHeading">1. Izmēriet</string>

@@ -5,12 +5,10 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="app_name_long">Privacy Friendly Линейка</string>
-    <string name="version_number">Версия 1.0</string>
+    <string name="version_number">Версия 1.0.1</string>
 
     <string name="mode">Режим</string>
     <string name="ruler">Линейка</string>
-    <string name="gallery">Фотография из галереи</string>
-    <string name="camera">Снять фотографию</string>
 
     <string name="calibrate">Калибрировать</string>
     <string name="measureLineHeading">1. Отмерить</string>

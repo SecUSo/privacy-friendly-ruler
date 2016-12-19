@@ -9,8 +9,6 @@
 
     <string name="mode">モード</string>
     <string name="ruler">ルーラー</string>
-    <string name="gallery">ギャラリーから画像</string>
-    <string name="camera">写真を撮る</string>
 
     <string name="calibrate">較正</string>
     <string name="measureLineHeading">1. 測定</string>
