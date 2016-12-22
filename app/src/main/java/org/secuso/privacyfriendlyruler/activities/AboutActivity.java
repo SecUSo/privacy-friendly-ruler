@@ -1,9 +1,11 @@
-package org.secuso.privacyfriendlyruler;
+package org.secuso.privacyfriendlyruler.activities;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import org.secuso.privacyfriendlyruler.R;
 
 /**
  * Created by yonjuni on 25.08.15.

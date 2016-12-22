@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlyruler;
+package org.secuso.privacyfriendlyruler.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,9 +14,10 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import org.secuso.privacyfriendlyruler.R;
+
 /**
- * Created by yonjuni on 25.08.15.
- * Shamelessly "borrowed" by roberts on 21.05.16.
+ * Created by roberts on 21.05.16.
  */
 public class CalibrationActivity extends AppCompatActivity {
 
@@ -24,11 +25,11 @@ public class CalibrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calibration);
 
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setTitle(R.string.calibrate);
-        actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
+//        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+//        actionBar.setDisplayHomeAsUpEnabled(true);
+//        actionBar.setTitle(R.string.calibrate);
+//        actionBar.setDisplayHomeAsUpEnabled(true);
+//        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
 
         Button confirmButton = (Button) findViewById(R.id.confirmButton);
         confirmButton.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +58,7 @@ public class CalibrationActivity extends AppCompatActivity {
                     prefs.edit().putFloat("dpmm", dpmm).commit();
                     calibrationDoneToast.show();
                     Intent intent = new Intent();
-                    intent.setClass(getBaseContext(), MainActivity.class);
+                    intent.setClass(getBaseContext(), RulerActivity.class);
                     startActivityForResult(intent, 0);
                 }
             }
