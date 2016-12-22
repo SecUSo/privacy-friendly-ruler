@@ -40,6 +40,7 @@ public class RulerActivity extends BaseActivity {
         if (prefManager.isFirstTimeLaunch()) {
             WelcomeDialog welcomeDialog = new WelcomeDialog();
             welcomeDialog.show(this.getSupportFragmentManager(), "WelcomeDialog");
+            prefManager.setFirstTimeLaunch(false);
         }
 
 
