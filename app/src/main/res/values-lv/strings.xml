@@ -5,7 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="app_name_long">Privacy Friendly Lineāls</string>
-    <string name="version_number">Versija 1.0.2</string>
+    <string name="version_number">Versija 1.1</string>
 
     <string name="mode">Režīms</string>
     <string name="ruler">Lineāls</string>
@@ -85,15 +85,10 @@
     <string name="help_overview_heading">Pārskats</string>
     <string name="help_calibration">Manuālā kalibrācija</string>
     <string name="help_disclaimer">Brīdinājums</string>
-    <string name="help_category_calibration">Kalibrācija</string>
     <string name="pref_calibration_summary">Jūs varat manuāli kalibrēt lineālu caur action izvelni.</string>
-    <string name="help_privacy_heading">Informācija par privātsfēru</string>
     <string name="help_permissions_heading">Atļaujas</string>
     <string name="help_permissions_description">Privacy Friendly Lineāls neizmanto īpašas atļaujas.</string>
-    <string name="help_category_options">Iestatījumi</string>
-    <string name="help_units">Mērvienības</string>
     <string name="pref_units_summary">Jūs varat iestatīt vai labais un kreisais lineāls uzrādīs centimetrus, collas vai netiks uzrādīts. Abi lineāli var tikt iestatīti neatkarīgi viens no otra.</string>
-    <string name="help_angles">Leņķu mērvienības</string>
     <string name="pref_angles_summary">Ekrāna kreisajā pusē Jūs varat likt uzrādīt leņķā mēri grādos vai radiānos.</string>
     <string name="help_intro">Aplikācija Privacy Friendly Lineāls pārvērš jūsu viedtālruni pār lineālu gadijumā ja Jums vajag ātri kaut ko izmērīt.</string>
 

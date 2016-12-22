@@ -5,7 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="app_name_long">Privacy Friendly Ruler</string>
-    <string name="version_number">Version 1.0.1</string>
+    <string name="version_number">Version 1.1</string>
 
     <string name="mode">Mode</string>
     <string name="ruler">Ruler</string>
@@ -85,15 +85,10 @@
     <string name="help_overview_heading">Overview</string>
     <string name="help_calibration">Manual Calibration</string>
     <string name="help_disclaimer">Disclaimer</string>
-    <string name="help_category_calibration">Calibration</string>
     <string name="pref_calibration_summary">You can manually calibrate the ruler via the "calibrate" option in the action menu.</string>
-    <string name="help_privacy_heading">Privacy Info</string>
     <string name="help_permissions_heading">Permissions</string>
-    <string name="help_permissions_description">Privacy Friendly Ruler does not use any permissions.</string>
-    <string name="help_category_options">Settings</string>
-    <string name="help_units">Units of Measurement</string>
+    <string name="help_permissions_description">Privacy Friendly Ruler does not require any Android permission.</string>
     <string name="pref_units_summary">You can display a cm ruler, an inch ruler or no ruler on the left and on the right side of the screen. Both rulers can be set separately in the option menu.</string>
-    <string name="help_angles">Angle Measure</string>
     <string name="pref_angles_summary">You can display an angle measure in degrees or radian on the left side of the screen.</string>
     <string name="help_intro">The Privacy Friendly Ruler App turns Your Phone into a ruler for quick on the fly measurements.</string>
 

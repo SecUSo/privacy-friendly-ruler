@@ -5,7 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="app_name_long">Privacy Friendly Линейка</string>
-    <string name="version_number">Версия 1.0.2</string>
+    <string name="version_number">Версия 1.1</string>
 
     <string name="mode">Режим</string>
     <string name="ruler">Линейка</string>
@@ -85,15 +85,10 @@
     <string name="help_overview_heading">Обзор</string>
     <string name="help_calibration">Ручная Калибрация</string>
     <string name="help_disclaimer">Предупреждение</string>
-    <string name="help_category_calibration">Калибрация</string>
     <string name="pref_calibration_summary">Вы можете вручную откалибрировать линейку через меню деиствий.</string>
-    <string name="help_privacy_heading">О частной информации</string>
     <string name="help_permissions_heading">Разрешения</string>
     <string name="help_permissions_description">Privacy Friendly Линейка не требует разрешений.</string>
-    <string name="help_category_options">Установка</string>
-    <string name="help_units">Единицы измерения</string>
     <string name="pref_units_summary">Вы можете включить сантиметровую или дюймовую линейку на левой и правой стороне экрана. Обе линейки могут быть установлены независимо друг от друга.</string>
-    <string name="help_angles">Единицы измерения углов</string>
     <string name="pref_angles_summary">Вы можете включить угломер на левой стороне экрана в мере градусов или радианов.</string>
     <string name="help_intro">Приложение Privacy Friendly Линейка превращает Ваш телефон в линейку в случае, если Вам нужно быстро что-то измерить.</string>
 
