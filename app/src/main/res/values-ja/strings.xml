@@ -84,11 +84,10 @@
     <string name="help">ヘルプ</string>
     <string name="help_overview_heading">概要</string>
     <string name="help_disclaimer">免責事項</string>
-    <string name="help_category_calibration">較正</string>
+    <string name="help_calibration">手動較正</string>
     <string name="pref_calibration_summary">アクションメニューの「較正」オプションを使用して、ルーラーを手動で較正することができます。</string>
     <string name="help_permissions_heading">アクセス許可</string>
     <string name="help_permissions_description">プライバシーフレンドリーなルーラーは、アクセス許可を何も使用しません。</string>
-    <string name="help_units">測定の単位</string>
     <string name="pref_units_summary">画面の左側と右側に cm ルーラー、インチルーラーを表示、またはルーラーを表示しないことができます。 両側のルーラーは、オプションメニューで別々に設定することができます。</string>
     <string name="pref_angles_summary">画面の左側に、度またはラジアンで角度の測定を表示できます。</string>
     <string name="help_intro">プライバシーフレンドリーなルーラーアプリは、お使いの電話をルーラーに変えて、すばやく測定することができます。</string>
