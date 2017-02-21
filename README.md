@@ -11,6 +11,8 @@ Privacy Friendly Ruler belongs to the group of Privacy Friendly Apps and has bee
 
 ## Download and more Information
 
+[<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="60">](https://f-droid.org/repository/browse/?fdfilter=ruler&fdid=org.secuso.privacyfriendlyruler)<a href="https://play.google.com/store/apps/details?id=org.secuso.privacyfriendlyrulerapp"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="60"></a>
+
 Android Studio is required if further development is intended. 
 
 ## API Reference
