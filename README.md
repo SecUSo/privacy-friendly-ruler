@@ -1,4 +1,6 @@
-## Privacy Friendly Ruler
+# Privacy Friendly Ruler
+
+[<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="60">](https://f-droid.org/repository/browse/?fdfilter=ruler&fdid=org.secuso.privacyfriendlyruler)<a href="https://play.google.com/store/apps/details?id=org.secuso.privacyfriendlyrulerapp"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="60"></a>
 
 Privacy Friendly Ruler turns the phone screen into a ruler for quick measurments on the go.
 
@@ -9,9 +11,7 @@ Please be aware that Privacy Friendly Ruler is not a professionally calibrated m
 
 Privacy Friendly Ruler belongs to the group of Privacy Friendly Apps and has been developed to provide a privacy friendly measuring application.
 
-## Download and more Information
-
-[<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="60">](https://f-droid.org/repository/browse/?fdfilter=ruler&fdid=org.secuso.privacyfriendlyruler)<a href="https://play.google.com/store/apps/details?id=org.secuso.privacyfriendlyrulerapp"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="60"></a>
+## Building
 
 Android Studio is required if further development is intended. 
 
@@ -37,7 +37,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-The icons used in the nagivation drawer are licensed under the [CC BY 2.5] (http://creativecommons.org/licenses/by/2.5/). In addition to them the app uses icons from [Google Design Material Icons](https://design.google.com/icons/index.html) licensed under Apache License Version 2.0. All other images (the logo of Privacy Friendly Apps, the SECUSO logo and the header in the navigation drawer) copyright [Technische Universtität Darmstadt] (www.tu-darmstadt.de) (2016).
+The icons used in the nagivation drawer are licensed under the [CC BY 2.5] (http://creativecommons.org/licenses/by/2.5/). In addition to them the app uses icons from [Google Design Material Icons](https://design.google.com/icons/index.html) licensed under Apache License Version 2.0. All other images (the logo of Privacy Friendly Apps, the SECUSO logo, the app icon and the splash icon) copyright [Technische Universtität Darmstadt] (www.tu-darmstadt.de) (2016).
 
 ## Contributors
 
