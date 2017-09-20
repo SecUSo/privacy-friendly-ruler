@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Linjal</string>
+
+    <string name="navigation_drawer_open">Åpne navigasjonsskuffen</string>
+    <string name="navigation_drawer_close">Lukk navigasjonsskuffen</string>
+
+    <string name="app_name_long">Privatlivsvennlig linjal</string>
+    <string name="version_number">Versjon 1,1</string>
+
+    <string name="mode">Modus</string>
+    <string name="ruler">Linjal</string>
+
+    <string name="calibrate">Kalibrer</string>
+    <string name="measureLineHeading">1. Mål</string>
+    <string name="measureLine">Vennligst mål lengden til linjen nedenfor så presist som mulig.</string>
+    <string name="headingEnter">2. Velg den målte lengden</string>
+    <string name="calibrateConfirmButton">Kalibrer</string>
+    <string name="noInput">Vennligst velg lengden til linjen.</string>
+    <string name="calibrationDone">Kalibrering fullført</string>
+    <string name="calibrationMM">mm</string>
+    <string name="calibrationInch">tommer</string>
+    <string name="calibrationWarning">Manuell kalibrering kan ikke fjerne alle nøyaktigheter, på grunn av avrunding.</string>
+
+    <string name="settings">Innstillinger</string>
+
+    <string name="action_calibration">Kalibrer</string>
+    <string name="action_resetcalibration">Tilbakestill kalibrering</string>
+    <string name="calibrationReset">Kalibreringstilbakestilling</string>
+
+    <string name="pref_ruler">Linjalinnstillinger</string>
+    <string name="pref_leftruler">Venstre linkal</string>
+    <string name="pref_leftruler_verbose">Hva burde vises på den venste linjalen?</string>
+    <string-array name="pref_leftruler_entries">
+        <item>Centimeter</item>
+        <item>Tommer</item>
+        <item>Ingenting</item>
+    </string-array>
+    <string-array name="pref_leftruler_evs">
+        <item>Centimeter</item>
+        <item>Tommer</item>
+        <item>Ingenting</item>
+    </string-array>
+    <string name="pref_leftruler_default">Centimeter</string>
+
+    <string name="pref_rightruler">Høyre linjal</string>
+    <string name="pref_rightruler_verbose">Hva burde vises på den høyre linjalen should be displayed on right ruler?</string>
+    <string-array name="pref_rightruler_entries">
+        <item>Centimeter</item>
+        <item>Tommer</item>
+        <item>Ingenting</item>
+    </string-array>
+    <string-array name="pref_rightruler_evs">
+        <item>Centimeter</item>
+        <item>Tommer</item>
+        <item>Ingenting</item>
+    </string-array>
+    <string name="pref_rightruler_default">Tommer</string>
+
+    <string name="pref_anglemeasure">Vinkelmåling</string>
+    <string name="pref_anglemeasure_verbose">Vil du skru på skalaen for vinkelmåling?</string>
+    <string-array name="pref_anglemeasure_entries">
+        <item>Grader</item>
+        <item>Radian</item>
+        <item>Ingenting</item>
+    </string-array>
+    <string-array name="pref_anglemeasure_evs">
+        <item>Grader</item>
+        <item>Radian</item>
+        <item>Ingenting</item>
+    </string-array>
+    <string name="pref_anglemeasure_default">Ingenting</string>
+
+    <string name="welcome">Velkommen</string>
+    <string name="field_select_description_headline">Velkommen til Den Privatlivsvennlige Linjalen.</string>
+    <string name="field_select_description">Denne appen gir deg linjaler og vinkelmålere på din skjerm.</string>
+    <string name="difficulty_description_headline">Innstillinger</string>
+    <string name="difficulty_description">Du kan endre måleenhetene i innstillingene. I handlingsmenyen kan du kalibrere linjalen (valgfritt).</string>
+    <string name="disclaimer">Denne appen er ikke en profesjonelt kalibrert måleenhet. Denne appen kan kalibreres manuelt, som kan minimere feilmarginen. Men, avhengig av enheten, kan det fortsætt være avrundingsfeil.</string>
+    <string name="disclaimer_check">Jeg har lest dokumentet om potensielle avrundingsfeil.</string>
+    <string name="disclaimer_check_toast">Vennligst sjekk at du har lest dokumentet.</string>
+    <string name="okay">Okei</string>
+    <string name="viewhelp">Se i Hjelp</string>
+
+    <string name="help">Hjelp</string>
+    <string name="help_overview_heading">Overblikk</string>
+    <string name="help_calibration">Manuell kalibrering</string>
+    <string name="help_disclaimer">Ansvarsfraskrivelse</string>
+    <string name="pref_calibration_summary">Du kan manuelt kalibrere linjalen via "Kalibrer"-innstillingen i handlingsmenyen.</string>
+    <string name="help_permissions_heading">Tillatelser</string>
+    <string name="help_permissions_description">Den Privatlivsvennlige Linjalen krever ikke noen Android-tillatelser.</string>
+    <string name="pref_units_summary">Du kan vise en centimeter-linjal, en tommelinjal, eller ingen linjal, på de venstre og høyre sidene av skjermen. Begge linjalene kan velges separat i innstillingsmenyen.</string>
+    <string name="pref_angles_summary">Du kan vise en vinkelmåler i grader eller radian på den venstre siden av skjermen.</string>
+    <string name="help_intro">Den Privatlivsvennlige Linjalen gjøre mobilen din om til en linjal for å måle i forbifarten.</string>
+
+    <string name="about">Om Linjal</string>
+    <string name="about_author">Skaper: </string>
+    <string name="about_author_contributors">og andre bidragsytere.</string>
+    <string name="about_affiliation">I samarbeid med:</string>
+    <string name="privacy_friendly">Denne appen hører til i appgruppen Privacy Friendly Apps, som er utviklet av Technische Universität Darmstadt. Kildekoden er lisensiert under GPLv3. Bildeopphavsretter holdes av TU Darmstadt og Google Inc.</string>
+    <string name="more_info">Mere informasjon kan bli funnet på:</string>
+    <string name="url"><a href="https://www.secuso.org/pfa">SECUSO-nettsiden</a></string>
+
+</resources>
