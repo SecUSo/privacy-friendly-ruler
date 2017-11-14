@@ -10,7 +10,7 @@
     <string name="mode">Modo</string>
     <string name="ruler">Régua</string>
 
-    <string name="calibrate">Calibraar</string>
+    <string name="calibrate">Calibrar</string>
     <string name="measureLineHeading">1. Meça</string>
     <string name="measureLine">Por favor meça o comprimento da linha abaixo tão precisamente quanto possível.</string>
     <string name="headingEnter">2. Insira o Comprimento Medido</string>
@@ -24,8 +24,8 @@
     <string name="settings">Configurações</string>
 
     <string name="action_calibration">Calibrar</string>
-    <string name="action_resetcalibration">Restaurar Calibração</string>
-    <string name="calibrationReset">Calibração Restaurada.</string>
+    <string name="action_resetcalibration">Redefinir Calibração</string>
+    <string name="calibrationReset">Calibração Redefinida.</string>
 
     <string name="pref_ruler">Configurações de Régua</string>
     <string name="pref_leftruler">Régua esquerda</string>
@@ -72,13 +72,13 @@
 
     <string name="welcome">Bem Vindo</string>
     <string name="field_select_description_headline">Bem Vindo à Privacy Friendly Ruler</string>
-    <string name="field_select_description">Este app fornece réguas e medidas de ângulo na Sua tela.</string>
+    <string name="field_select_description">Este app fornece réguas e medidas de ângulo na sua tela.</string>
     <string name="difficulty_description_headline">Configurações</string>
-    <string name="difficulty_description">Você pode alterar as unidades de medida nas configurações. No menu de ações Você pode calibrar a régua (opcional).</string>
-    <string name="disclaimer">Este app não é um dispositivo de medida calibrado profissionalmente. Este App pode ser calibrado manualmente o que pode minimizar o erro. Entretanto, dependendo do dispositivo haverá erros de arredondamento.</string>
+    <string name="difficulty_description">Você pode alterar as unidades de medida nas configurações. No menu de ações você pode calibrar a régua (opcional).</string>
+    <string name="disclaimer">Este app não é um dispositivo de medida calibrado profissionalmente. Este App pode ser calibrado manualmente, o que pode minimizar erros. Entretanto, dependendo do dispositivo haverá erros de arredondamento.</string>
     <string name="disclaimer_check">Eu li o aviso legal sobre potenciais erros de arredondamento.</string>
     <string name="disclaimer_check_toast">Por favor marque que você leu o aviso legal.</string>
-    <string name="okay">Okay</string>
+    <string name="okay">OK</string>
     <string name="viewhelp">Ver Ajuda</string>
 
     <string name="help">Ajuda</string>
@@ -88,9 +88,9 @@
     <string name="pref_calibration_summary">Você pode calibrar manualmente a régua pela opção "calibrar" no menu de ações.</string>
     <string name="help_permissions_heading">Permissões</string>
     <string name="help_permissions_description">Privacy Friendly Ruler não requer nenhuma permissão do Android.</string>
-    <string name="pref_units_summary">Você pode exibir uma régua em cm, ou uma régua em pol ou nenhuma régua na lateral esquerda ou direita da tela. Ambas réguas podem ser configuradas separadamente no menu de opções.</string>
+    <string name="pref_units_summary">Você pode exibir uma régua em cm, ou uma régua em polegadas ou nenhuma régua na lateral esquerda ou direita da tela. Ambas réguas podem ser configuradas separadamente no menu de opções.</string>
     <string name="pref_angles_summary">Você pode exibir uma medida de ângulo em graus ou radianos no lado esquerdo da tela.</string>
-    <string name="help_intro">O App Privacy Friendly Ruler Transforma Seu Celular em uma régua para medidas rápidas.</string>
+    <string name="help_intro">O App Privacy Friendly Ruler transforma Seu Celular em uma régua para medidas rápidas.</string>
 
     <string name="about">Sobre</string>
     <string name="about_author">Autor: </string>
