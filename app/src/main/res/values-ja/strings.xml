@@ -5,7 +5,7 @@
     <string name="navigation_drawer_close">ナビゲーションドロワーを閉じる</string>
 
     <string name="app_name_long">Privacy Friendly Ruler</string>
-    <string name="version_number">Version 1.1</string>
+    <string name="version_number">Version v%s</string>
 
     <string name="mode">モード</string>
     <string name="ruler">ルーラー</string>

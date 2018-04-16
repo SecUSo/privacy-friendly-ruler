@@ -5,7 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="app_name_long">Privacy Friendly Lineal</string>
-    <string name="version_number">Version 1.1</string>
+    <string name="version_number">Version v%s</string>
 
     <string name="mode">Modus</string>
     <string name="ruler">Lineal</string>

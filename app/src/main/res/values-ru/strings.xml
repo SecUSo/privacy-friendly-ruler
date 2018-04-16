@@ -5,7 +5,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="app_name_long">Privacy Friendly Линейка</string>
-    <string name="version_number">Версия 1.1</string>
+    <string name="version_number">Версия v%s</string>
 
     <string name="mode">Режим</string>
     <string name="ruler">Линейка</string>
