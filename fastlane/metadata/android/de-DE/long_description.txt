@@ -1,0 +1,11 @@
+Privacy Friendly Lineal kann am Bildschirmrand ein Lineal oder Winkelmesser anzeigen. So sind spontane Messungen mit dem Smartphone möglich.
+
+Was unterscheidet Privacy Friendly Lineal von anderen, ähnlichen Apps?
+
+1. Keine Berechtigungen
+Privacy Friendly Lineal verzichtet komplett auf Berechtigungen - bei voller Funktionalität.
+
+2. Keine störende Werbung
+Viele andere kostenlose Apps blenden störende Werbung ein, die unter anderem auch die Akkulaufzeit verkürzt und Datenvolumen verbrauchen kann.
+
+Die App gehört zur Gruppe der Privacy Friendly Apps, die von der Forschungsgruppe SECUSO der Technischen Universität Darmstadt entwickelt werden. Mehr Informationen unter: https://secuso.org/pfa
