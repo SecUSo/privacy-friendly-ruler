@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Régua</string>
+
+    <string name="navigation_drawer_open">Abrir caixa de navegação</string>
+    <string name="navigation_drawer_close">Fechar caixa de navegação</string>
+
+    <string name="app_name_long">Privacy Friendly Ruler</string>
+    <string name="version_number">Versão v%s</string>
+
+    <string name="mode">Modo</string>
+    <string name="ruler">Régua</string>
+
+    <string name="calibrate">Calibrar</string>
+    <string name="measureLineHeading">1. Medição</string>
+    <string name="measureLine">Por favor meça o comprimento da linha com a maior precisão possível.</string>
+    <string name="headingEnter">2. Insira o comprimento medido</string>
+    <string name="calibrateConfirmButton">Calibrar</string>
+    <string name="noInput">Por favor, digite o comprimento da linha.</string>
+    <string name="calibrationDone">Calibragem concluída.</string>
+    <string name="calibrationMM">mm</string>
+    <string name="calibrationInch">Polegada</string>
+    <string name="calibrationWarning">A calibragem não elimita as imprecisões devido ao arredondamento.</string>
+
+    <string name="settings">Configurações</string>
+
+    <string name="action_calibration">Calibrar</string>
+    <string name="action_resetcalibration">Reiniciar calibragem.</string>
+    <string name="calibrationReset">Calibragem reiniciada.</string>
+
+    <string name="pref_ruler">Ajustes da Régua</string>
+    <string name="pref_leftruler">Régua à esquerda</string>
+    <string name="pref_leftruler_verbose">O que deve ser exibido na régua à esquerda?</string>
+    <string-array name="pref_leftruler_entries">
+        <item>cm</item>
+        <item>polegada</item>
+        <item>ilimitada</item>
+    </string-array>
+    <string-array name="pref_leftruler_evs">
+        <item>cm</item>
+        <item>polegada</item>
+        <item>desligada</item>
+    </string-array>
+    <string name="pref_leftruler_default">cm</string>
+
+    <string name="pref_rightruler">Régua à direita</string>
+    <string name="pref_rightruler_verbose">WO que deve ser exibido na régua à direita?</string>
+    <string-array name="pref_rightruler_entries">
+        <item>cm</item>
+        <item>polegada</item>
+        <item>ilimitada</item>
+    </string-array>
+    <string-array name="pref_rightruler_evs">
+        <item>cm</item>
+        <item>polegada</item>
+        <item>desligada</item>
+    </string-array>
+    <string name="pref_rightruler_default">inch</string>
+
+    <string name="pref_anglemeasure">Transferidor</string>
+    <string name="pref_anglemeasure_verbose">Ativar o Transferidor?</string>
+    <string-array name="pref_anglemeasure_entries">
+        <item>graus</item>
+        <item>radial</item>
+        <item>ilimitada</item>
+    </string-array>
+    <string-array name="pref_anglemeasure_evs">
+        <item>graus</item>
+        <item>radial</item>
+        <item>desligada</item>
+    </string-array>
+    <string name="pref_anglemeasure_default">desligada</string>
+
+    <string name="welcome">Bem vindo</string>
+    <string name="field_select_description_headline">Bem vindo à Privacy Friendly Ruler (Régua Amigável à Privacidade)</string>
+    <string name="field_select_description">Esse aplicativo fornece uma Régua e um Transferidor em sua tela.</string>
+    <string name="difficulty_description_headline">Configurações</string>
+    <string name="difficulty_description">Você pode mudar as Unidades de Medida em Configurações. No menu de Calibragem você pode Calibrar a Régua (opcional).</string>
+    <string name="disclaimer">Este aplicativo não é uma régua de calibragem profissional. O aplicativo pode ser calibrado, o que minimiza o erro, porém, dependendo da tela do seu dispositivo, ainda podem ocorrer erros de arredondamento.</string>
+    <string name="disclaimer_check">Li o termo de responsabilidade sobre possíveis erros de arredondamento.</string>
+    <string name="disclaimer_check_toast">Por favor, confirme que você leu o termo de responsabilidade.</string>
+    <string name="okay">Sim</string>
+    <string name="viewhelp">Mostrar Ajuda</string>
+
+    <string name="help">Ajuda</string>
+    <string name="help_overview_heading">Visão geral</string>
+    <string name="help_calibration">Calibragem Manual</string>
+    <string name="help_disclaimer">Aviso</string>
+    <string name="pref_calibration_summary">Você pode calibrar a régua manualmente com a opção "Calibrar" no menu de Calibragem.</string>
+    <string name="help_permissions_heading">Autorizações</string>
+    <string name="help_permissions_description">O Privacy Friendly Ruler (Régua Amigável à Privacidade) não utiliza nenhuma permissão do Android.</string>
+    <string name="pref_units_summary">Você pode exibir uma Régua com escala de Centímetros, de Polegadas ou ilimitada nos lados esquerdo e direito da tela. Ambas as réguas podem ser ajustadas separadamente nas configurações.</string>
+    <string name="pref_angles_summary">Você pode exibir um Transferidor em Graus ou Raio no lado esquerdo da tela.</string>
+    <string name="help_intro">O aplicativo Privacy Friendly Ruler (Régua Amigável à Privacidade) transforma seu smartphone em uma Régua para fazer medições quando você não tem um dispositivo de medição à mão.</string>
+
+    <string name="about">Sobre</string>
+    <string name="about_author">Autor: </string>
+    <string name="about_author_contributors">e Colaboradores.</string>
+    <string name="about_affiliation">Em colaboração com</string>
+    <string name="privacy_friendly">Este aplicativo pertence ao grupo Privacy Friendly Apps desenvolvido pela Universidade Técnica de Darmstadt. Código-fonte licenciado sob GPLv3. Copyright das imagens TU Darmstadt e Google Inc.</string>
+    <string name="more_info">Mais informações em:</string>
+    <string name="url"><a href="https://www.secuso.org/pfa">SECUSO-Webseite</a></string>
+
+</resources>
