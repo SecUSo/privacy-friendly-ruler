@@ -33,7 +33,7 @@
     <string-array name="pref_leftruler_entries">
         <item>cm</item>
         <item>polegada</item>
-        <item>ilimitada</item>
+        <item>desligada</item>
     </string-array>
     <string-array name="pref_leftruler_evs">
         <item>cm</item>
@@ -47,7 +47,7 @@
     <string-array name="pref_rightruler_entries">
         <item>cm</item>
         <item>polegada</item>
-        <item>ilimitada</item>
+        <item>desligada</item>
     </string-array>
     <string-array name="pref_rightruler_evs">
         <item>cm</item>
@@ -61,7 +61,7 @@
     <string-array name="pref_anglemeasure_entries">
         <item>graus</item>
         <item>radial</item>
-        <item>ilimitada</item>
+        <item>desligada</item>
     </string-array>
     <string-array name="pref_anglemeasure_evs">
         <item>graus</item>
@@ -88,7 +88,7 @@
     <string name="pref_calibration_summary">Você pode calibrar a régua manualmente com a opção "Calibrar" no menu de Calibragem.</string>
     <string name="help_permissions_heading">Autorizações</string>
     <string name="help_permissions_description">O Privacy Friendly Ruler (Régua Amigável à Privacidade) não utiliza nenhuma permissão do Android.</string>
-    <string name="pref_units_summary">Você pode exibir uma Régua com escala de Centímetros, de Polegadas ou ilimitada nos lados esquerdo e direito da tela. Ambas as réguas podem ser ajustadas separadamente nas configurações.</string>
+    <string name="pref_units_summary">Você pode exibir uma Régua com escala de Centímetros, de Polegadas ou desligada nos lados esquerdo e direito da tela. Ambas as réguas podem ser ajustadas separadamente nas configurações.</string>
     <string name="pref_angles_summary">Você pode exibir um Transferidor em Graus ou Raio no lado esquerdo da tela.</string>
     <string name="help_intro">O aplicativo Privacy Friendly Ruler (Régua Amigável à Privacidade) transforma seu smartphone em uma Régua para fazer medições quando você não tem um dispositivo de medição à mão.</string>
 
