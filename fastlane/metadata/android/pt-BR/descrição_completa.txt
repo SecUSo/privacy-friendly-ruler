@@ -1,0 +1,12 @@
+Privacy Friendly Ruler (Régua Amigável à Privacidade) pode exibir uma régua ou um transferidor na borda da tela.
+Isso permite medições rápidas com o smartphone.
+Pertence ao grupo de aplicativos "Privacy Friendly" (Amigáveis à Privacidade) e foi desenvolvido pelo grupo de pesquisa SECUSO, no Instituto de Tecnologia Karlsruhe.
+Mais informações podem ser encontradas em secuso.org/pfa/
+
+O que torna o Privacy Friendly Ruler (Régua Amigavel à Privacidade) diferente de outros aplicativos parecidos?
+
+1. Sem permissões
+Privacy Friendly Ruler (Régua Amigável à Privacidade) não requer nenhuma permissão.
+
+2. Sem propagandas
+Muitos outros apps gratuitos no Loja Google Play são lotados de anúncios irritantes que também diminuem o tempo de vida da bateria.
