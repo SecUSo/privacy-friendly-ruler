@@ -19,7 +19,7 @@
     <string name="calibrationDone">Calibragem concluída.</string>
     <string name="calibrationMM">mm</string>
     <string name="calibrationInch">Polegada</string>
-    <string name="calibrationWarning">A calibragem não elimita as imprecisões devido ao arredondamento.</string>
+    <string name="calibrationWarning">A calibragem não elimina as imprecisões devido ao arredondamento.</string>
 
     <string name="settings">Configurações</string>
 
