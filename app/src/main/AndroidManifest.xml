@@ -11,7 +11,8 @@
         <activity
             android:name="org.secuso.privacyfriendlyruler.activities.SplashActivity"
             android:theme="@style/SplashTheme"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
