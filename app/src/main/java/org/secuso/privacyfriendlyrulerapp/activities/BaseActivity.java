@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlyruler.activities;
+package org.secuso.privacyfriendlyrulerapp.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -18,7 +18,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
-import org.secuso.privacyfriendlyruler.R;
+import org.secuso.privacyfriendlyrulerapp.R;
 
 
 /**

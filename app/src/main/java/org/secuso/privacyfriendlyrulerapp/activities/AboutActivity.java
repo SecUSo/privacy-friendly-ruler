@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlyruler.activities;
+package org.secuso.privacyfriendlyrulerapp.activities;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -7,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
-import org.secuso.privacyfriendlyruler.BuildConfig;
-import org.secuso.privacyfriendlyruler.R;
+import org.secuso.privacyfriendlyrulerapp.BuildConfig;
+import org.secuso.privacyfriendlyrulerapp.R;
 
 /**
  * Created by yonjuni on 25.08.15.

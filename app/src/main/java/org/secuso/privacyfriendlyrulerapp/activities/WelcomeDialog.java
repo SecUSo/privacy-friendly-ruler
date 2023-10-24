@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlyruler.activities;
+package org.secuso.privacyfriendlyrulerapp.activities;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
-import org.secuso.privacyfriendlyruler.R;
+import org.secuso.privacyfriendlyrulerapp.R;
 
 public class WelcomeDialog extends DialogFragment {
 

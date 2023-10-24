@@ -1,8 +1,8 @@
-package org.secuso.privacyfriendlyruler.helpers;
+package org.secuso.privacyfriendlyrulerapp.helpers;
 
 import android.content.Context;
 
-import org.secuso.privacyfriendlyruler.R;
+import org.secuso.privacyfriendlyrulerapp.R;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

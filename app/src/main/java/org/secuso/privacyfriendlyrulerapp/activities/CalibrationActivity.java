@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlyruler.activities;
+package org.secuso.privacyfriendlyrulerapp.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import org.secuso.privacyfriendlyruler.R;
+import org.secuso.privacyfriendlyrulerapp.R;
 
 /**
  * Created by roberts on 21.05.16.

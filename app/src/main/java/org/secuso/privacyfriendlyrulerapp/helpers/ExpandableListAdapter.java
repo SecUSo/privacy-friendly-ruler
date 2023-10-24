@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlyruler.helpers;
+package org.secuso.privacyfriendlyrulerapp.helpers;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
-import org.secuso.privacyfriendlyruler.R;
+import org.secuso.privacyfriendlyrulerapp.R;
 
 import java.util.HashMap;
 import java.util.List;

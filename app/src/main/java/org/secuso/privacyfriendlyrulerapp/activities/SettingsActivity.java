@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlyruler.activities;
+package org.secuso.privacyfriendlyrulerapp.activities;
 
 
 import android.annotation.TargetApi;
@@ -14,7 +14,7 @@ import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.view.MenuItem;
 
-import org.secuso.privacyfriendlyruler.R;
+import org.secuso.privacyfriendlyrulerapp.R;
 
 /**
  * A {@link PreferenceActivity} that presents a set of application settings. On

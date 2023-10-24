@@ -1,11 +1,11 @@
-package org.secuso.privacyfriendlyruler.activities;
+package org.secuso.privacyfriendlyrulerapp.activities;
 
 import android.os.Bundle;
 import android.widget.ExpandableListView;
 
-import org.secuso.privacyfriendlyruler.R;
-import org.secuso.privacyfriendlyruler.helpers.ExpandableListAdapter;
-import org.secuso.privacyfriendlyruler.helpers.HelpDataDump;
+import org.secuso.privacyfriendlyrulerapp.R;
+import org.secuso.privacyfriendlyrulerapp.helpers.ExpandableListAdapter;
+import org.secuso.privacyfriendlyrulerapp.helpers.HelpDataDump;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

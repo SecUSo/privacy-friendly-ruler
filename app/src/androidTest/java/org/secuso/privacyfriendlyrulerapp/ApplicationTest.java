@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlyruler;
+package org.secuso.privacyfriendlyrulerapp;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

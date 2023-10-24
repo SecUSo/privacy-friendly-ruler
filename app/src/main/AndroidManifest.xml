@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.secuso.privacyfriendlyruler">
+    package="org.secuso.privacyfriendlyrulerapp">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="org.secuso.privacyfriendlyruler.activities.SplashActivity"
+            android:name="org.secuso.privacyfriendlyrulerapp.activities.SplashActivity"
             android:theme="@style/SplashTheme"
             android:screenOrientation="portrait"
             android:exported="true">
@@ -20,33 +20,33 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.RulerActivity"
+            android:name="org.secuso.privacyfriendlyrulerapp.activities.RulerActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
         <activity
-            android:name="org.secuso.privacyfriendlyruler.activities.AboutActivity"
-            android:parentActivityName=".activities.RulerActivity"
+            android:name="org.secuso.privacyfriendlyrulerapp.activities.AboutActivity"
+            android:parentActivityName="org.secuso.privacyfriendlyrulerapp.activities.RulerActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".activities.SettingsActivity"
-            android:parentActivityName=".activities.RulerActivity"
+            android:name="org.secuso.privacyfriendlyrulerapp.activities.SettingsActivity"
+            android:parentActivityName="org.secuso.privacyfriendlyrulerapp.activities.RulerActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".activities.HelpActivity"
-            android:parentActivityName=".activities.RulerActivity"
+            android:name="org.secuso.privacyfriendlyrulerapp.activities.HelpActivity"
+            android:parentActivityName="org.secuso.privacyfriendlyrulerapp.activities.RulerActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name="org.secuso.privacyfriendlyruler.activities.CalibrationActivity"
+            android:name="org.secuso.privacyfriendlyrulerapp.activities.CalibrationActivity"
             android:screenOrientation="portrait"
-            android:parentActivityName=".activities.RulerActivity">
+            android:parentActivityName="org.secuso.privacyfriendlyrulerapp.activities.RulerActivity">
         </activity>
     </application>
 

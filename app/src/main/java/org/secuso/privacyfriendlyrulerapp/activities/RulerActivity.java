@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlyruler.activities;
+package org.secuso.privacyfriendlyrulerapp.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,9 +10,9 @@ import android.view.MenuItem;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import org.secuso.privacyfriendlyruler.R;
-import org.secuso.privacyfriendlyruler.RulerView;
-import org.secuso.privacyfriendlyruler.tutorial.PrefManager;
+import org.secuso.privacyfriendlyrulerapp.R;
+import org.secuso.privacyfriendlyrulerapp.RulerView;
+import org.secuso.privacyfriendlyrulerapp.tutorial.PrefManager;
 
 /**
  * Created by roberts on 02.06.16.

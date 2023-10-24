@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlyruler.tutorial;
+package org.secuso.privacyfriendlyrulerapp.tutorial;
 
 import android.content.Context;
 import android.content.SharedPreferences;
