@@ -50,7 +50,7 @@ public class CalibrationActivity extends AppCompatActivity {
                     if (inchMode) {
                         length = (float) (length * 25.4);
                     }
-                    length = Math.min(40, Math.max(3, length));
+                    length = Math.min(200, Math.max(3, length));
                     SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
                     float dpmm = 300 / length;
                     prefs.edit().putFloat("dpmm", dpmm).commit();
