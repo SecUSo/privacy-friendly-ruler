@@ -1,4 +1,6 @@
+Privacy Friendly Reckoning Skills helps you improving your mental calculation skills in the four basic calculating operations.
 
+For each game, the player can choose between the four basic arithmetic operations and four difficulties (exercises up to 10, 100, 1000 and 10000).
 
 1. Keine Berechtigungen
 Privacy Friendly Lineal verzichtet komplett auf Berechtigungen - bei voller Funktionalität.
