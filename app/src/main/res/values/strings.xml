@@ -69,8 +69,8 @@
     <string name="disclaimer">This App is not a professionally calibrated measuring device. This App can be manually calibrated which may minimize the error. However, depending on the device there still could be rounding errors.</string>
     <string name="disclaimer_check">I have read the disclaimer about potential rounding issues.</string>
     <string name="disclaimer_check_toast">Please check that you have read the disclaimer.</string>
-    <string name="okay">Ok</string>
-    <string name="viewhelp">Voir l\'aide</string>
+    <string name="okay">Okay</string>
+    <string name="viewhelp">View Help</string>
     <string name="help">Help</string>
     <string name="help_overview_heading">Overview</string>
     <string name="help_calibration">Manual Calibration</string>
