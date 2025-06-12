@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import org.secuso.privacyfriendlyrulerapp.GoodbyeGoogleHelperKt;
 import org.secuso.privacyfriendlyrulerapp.R;
 import org.secuso.privacyfriendlyrulerapp.RulerView;
 import org.secuso.privacyfriendlyrulerapp.tutorial.PrefManager;
@@ -45,6 +46,7 @@ public class RulerActivity extends BaseActivity {
 
 
         overridePendingTransition(0, 0);
+        GoodbyeGoogleHelperKt.checkGoodbyeGoogle(this, getLayoutInflater());
     }
 
     @Override
