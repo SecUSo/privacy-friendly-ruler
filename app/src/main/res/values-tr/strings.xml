@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="version_number">Sürüm v%s</string>
+    <string name="welcome">Hoş geldiniz</string>
+    <string name="okay">Tamam</string>
+    <string name="help">Yardım</string>
+    <string name="help_overview_heading">Genel bakış</string>
+    <string name="viewhelp">Yardımı Görüntüle</string>
+</resources>

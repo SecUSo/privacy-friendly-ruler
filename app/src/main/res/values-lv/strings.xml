@@ -1,15 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Lineāls</string>
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="app_name_long">Privacy Friendly Lineāls</string>
     <string name="version_number">Versija v%s</string>
-
     <string name="mode">Režīms</string>
     <string name="ruler">Lineāls</string>
-
     <string name="calibrate">Kalibrēt</string>
     <string name="measureLineHeading">1. Izmēriet</string>
     <string name="measureLine">Lūdzu izmēriet līnijas garumu pēc iespējas precīzi.</string>
@@ -20,13 +17,10 @@
     <string name="calibrationMM">mm</string>
     <string name="calibrationInch">collas</string>
     <string name="calibrationWarning">Manuāla kalibrācija nenovērš noapaļojumkļūdu radītās neprecizitātes.</string>
-
     <string name="settings">Iestatījumi</string>
-
     <string name="action_calibration">Kalibrēt</string>
     <string name="action_resetcalibration">Atiestāt kalibrāciju</string>
     <string name="calibrationReset">Kalibrācija atiestāta.</string>
-
     <string name="pref_ruler">Lineāla iestatījumi</string>
     <string name="pref_leftruler">Kreisais lineāls</string>
     <string name="pref_leftruler_verbose">Ko uzrādīt uz kreisā lineāla?</string>
@@ -41,7 +35,6 @@
         <item>off</item>
     </string-array>
     <string name="pref_leftruler_default">cm</string>
-
     <string name="pref_rightruler">Labais lineāls</string>
     <string name="pref_rightruler_verbose">Ko uzrādīt uz labā lineāla?</string>
     <string-array name="pref_rightruler_entries">
@@ -55,7 +48,6 @@
         <item>off</item>
     </string-array>
     <string name="pref_rightruler_default">inch</string>
-
     <string name="pref_anglemeasure">Leņķa mēris</string>
     <string name="pref_anglemeasure_verbose">Ieslēgt lineālu leņķu mērīšanai?</string>
     <string-array name="pref_anglemeasure_entries">
@@ -69,7 +61,6 @@
         <item>off</item>
     </string-array>
     <string name="pref_anglemeasure_default">off</string>
-
     <string name="welcome">Sveicināti</string>
     <string name="field_select_description_headline">Laipni lūgti Privacy Friendly Lineālā</string>
     <string name="field_select_description">Šī aplikācija uzrāda lineālus attāluma un leņķu mērīšanai uz Jūsu telefona ekrāna.</string>
@@ -78,9 +69,7 @@
     <string name="okay">Labi</string>
     <string name="disclaimer">Šī lietotne nav profesionāli kalibrēta mērīšanas ierīce. Šo lietotni var manuāli kalibrēt, tādā veidā mazinot kļūdu izmēru. Neskatoties uz to atkarībā no ierīces tik un tā var rasties apaļošanas kļūdas.</string>
     <string name="disclaimer_check">Es izlasiju brīdinājumu par iespējamām apaļošanas kļūdām.</string>
-    <string name="disclaimer_check_toast"></string>
     <string name="viewhelp">Palīdzība</string>
-
     <string name="help">Palīdzība</string>
     <string name="help_overview_heading">Pārskats</string>
     <string name="help_calibration">Manuālā kalibrācija</string>
@@ -91,7 +80,6 @@
     <string name="pref_units_summary">Jūs varat iestatīt vai labais un kreisais lineāls uzrādīs centimetrus, collas vai netiks uzrādīts. Abi lineāli var tikt iestatīti neatkarīgi viens no otra.</string>
     <string name="pref_angles_summary">Ekrāna kreisajā pusē Jūs varat likt uzrādīt leņķā mēri grādos vai radiānos.</string>
     <string name="help_intro">Aplikācija Privacy Friendly Lineāls pārvērš jūsu viedtālruni pār lineālu gadijumā ja Jums vajag ātri kaut ko izmērīt.</string>
-
     <string name="about">Informācija</string>
     <string name="about_author">Autors: </string>
     <string name="about_author_contributors">un līdzstrādnieki.</string>
@@ -99,5 +87,4 @@
     <string name="privacy_friendly">Šī lietotne ir no Karlsruhe Institute of Technology izstrādātā Privacy Friendly Apps lietotņu kataloga. Bilžu autortiesības pieder KIT un Google Inc.</string>
     <string name="more_info">Papildus informācija (angļu valodā):</string>
     <string name="url"><a href="https://www.secuso.org/pfa">SECUSO mājas lapa</a></string>
-
 </resources>
