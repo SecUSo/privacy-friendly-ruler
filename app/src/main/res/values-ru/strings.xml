@@ -66,11 +66,11 @@
     <string name="field_select_description">Это приложение предоставляет линейку для измерения расстояний и углов.</string>
     <string name="difficulty_description_headline">Установки</string>
     <string name="difficulty_description">Вы можете изменить используемую единицу измерения в меню установок. В меню действий Вы можете калибрировать линейку (не обязательно).</string>
-    <string name="okay">Ладно</string>
+    <string name="okay">Хорошо</string>
     <string name="disclaimer">Эта аппликация не является профессионально настроенным измерительным устройством.  Эту аппликацию можно калибрировать в ручную, что уменьшит ошибку. Несмотря на это зависимо от устройства возможна ошибка округленья.</string>
     <string name="disclaimer_check">Я прочитал дисклеймер о потенциальных ошибок округленья.</string>
     <string name="disclaimer_check_toast">Отметьте, пожалуйста, что вы прочитали дисклеймер.</string>
-    <string name="viewhelp">Смотреть Справку</string>
+    <string name="viewhelp">Просмотр справки</string>
     <string name="help">Справка</string>
     <string name="help_overview_heading">Обзор</string>
     <string name="help_calibration">Ручная Калибрация</string>
