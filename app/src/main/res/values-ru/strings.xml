@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Линейка</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Открыть панель навигации</string>
+    <string name="navigation_drawer_close">Закрыть панель навигации</string>
     <string name="app_name_long">Privacy Friendly Линейка</string>
     <string name="version_number">Версия v%s</string>
     <string name="mode">Режим</string>
@@ -47,7 +47,7 @@
         <item>inch</item>
         <item>off</item>
     </string-array>
-    <string name="pref_rightruler_default">inch</string>
+    <string name="pref_rightruler_default">дюймы</string>
     <string name="pref_anglemeasure">Угломер</string>
     <string name="pref_anglemeasure_verbose">Включить угломер?</string>
     <string-array name="pref_anglemeasure_entries">
@@ -66,12 +66,12 @@
     <string name="field_select_description">Это приложение предоставляет линейку для измерения расстояний и углов.</string>
     <string name="difficulty_description_headline">Установки</string>
     <string name="difficulty_description">Вы можете изменить используемую единицу измерения в меню установок. В меню действий Вы можете калибрировать линейку (не обязательно).</string>
-    <string name="okay">Хорошо</string>
+    <string name="okay">Ладно</string>
     <string name="disclaimer">Эта аппликация не является профессионально настроенным измерительным устройством.  Эту аппликацию можно калибрировать в ручную, что уменьшит ошибку. Несмотря на это зависимо от устройства возможна ошибка округленья.</string>
     <string name="disclaimer_check">Я прочитал дисклеймер о потенциальных ошибок округленья.</string>
     <string name="disclaimer_check_toast">Отметьте, пожалуйста, что вы прочитали дисклеймер.</string>
-    <string name="viewhelp">Помощь</string>
-    <string name="help">Помощь</string>
+    <string name="viewhelp">Смотреть Справку</string>
+    <string name="help">Справка</string>
     <string name="help_overview_heading">Обзор</string>
     <string name="help_calibration">Ручная Калибрация</string>
     <string name="help_disclaimer">Предупреждение</string>
@@ -81,11 +81,11 @@
     <string name="pref_units_summary">Вы можете включить сантиметровую или дюймовую линейку на левой и правой стороне экрана. Обе линейки могут быть установлены независимо друг от друга.</string>
     <string name="pref_angles_summary">Вы можете включить угломер на левой стороне экрана в мере градусов или радианов.</string>
     <string name="help_intro">Приложение Privacy Friendly Линейка превращает Ваш телефон в линейку в случае, если Вам нужно быстро что-то измерить.</string>
-    <string name="about">Информация</string>
-    <string name="about_author">Авторы:</string>
-    <string name="about_author_contributors">и помощники</string>
-    <string name="about_affiliation">Вместе с</string>
-    <string name="privacy_friendly">Это программа принадлежит к группе Privacy Friendly Apps, разработанных Karlsruhe Institute of Technology. Исходный код лицензирован под GPLv3. Право на использование изображений принадлежит KIT и Google Inc.</string>
-    <string name="more_info">Подробнее можно узнать на:</string>
+    <string name="about">О приложении</string>
+    <string name="about_author">Автор:</string>
+    <string name="about_author_contributors">и другие участники.</string>
+    <string name="about_affiliation">В сотрудничестве с</string>
+    <string name="privacy_friendly">Это одно из приложений группы Уважающих Конфиденциальность Приложений (Privacy Friendly Apps, PFA), разработанных исследовательской группой SECUSO в Технологическом Институте Карлсруэ (KIT). Исходный код доступен по лицензии GPLv3. Авторские права на изображения принадлежат KIT и Google Inc.</string>
+    <string name="more_info">Больше информации на:</string>
     <string name="url"><a href="https://www.secuso.org/pfa">SECUSO веб-сайт</a></string>
 </resources>
