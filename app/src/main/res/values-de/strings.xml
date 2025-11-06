@@ -47,7 +47,7 @@
         <item>inch</item>
         <item>off</item>
     </string-array>
-    <string name="pref_rightruler_default">inch</string>
+    <string name="pref_rightruler_default">Zoll</string>
     <string name="pref_anglemeasure">Winkelmesser</string>
     <string name="pref_anglemeasure_verbose">Winkelmesser einschalten?</string>
     <string-array name="pref_anglemeasure_entries">
@@ -60,7 +60,7 @@
         <item>radian</item>
         <item>off</item>
     </string-array>
-    <string name="pref_anglemeasure_default">off</string>
+    <string name="pref_anglemeasure_default">aus</string>
     <string name="welcome">Willkommen</string>
     <string name="field_select_description_headline">Willkommen zu Privacy Friendly Lineal</string>
     <string name="field_select_description">Diese App stellt Ihnen ein Lineal und einen Winkelmesser auf Ihrem Bildschirm bereit.</string>
