@@ -1,0 +1,15 @@
+Privacy Friendly Ruler может отображать линейку или транспортир на краю дисплея. Это позволяет производить измерения на ходу с помощью смартфона. Он принадлежит к группе Privacy Friendly Apps, разработанной исследовательской группой SECUSO в Технологическом институте Карлсруэ. Более подробную информацию можно найти на secuso.org/pfa/
+
+Чем Privacy Friendly Ruler отличается от других подобных приложений?
+
+1. Никаких разрешений
+Privacy Friendly Ruler не требует никаких разрешений.
+
+2. Никакой рекламы
+Многие другие бесплатные приложения в магазине Google Play слепят раздражающей рекламой, а также сокращают срок службы батареи.
+
+
+Feel free to contact us via:
+Bluesky - @secusoresearch.bsky.social https://bsky.app/profile/secusoresearch.bsky.social
+Mastodon - @SECUSO_Research@bawü.social https://xn--baw-joa.social/@SECUSO_Research/
+Job opening - https://secuso.aifb.kit.edu/english/Job_Offers.php
