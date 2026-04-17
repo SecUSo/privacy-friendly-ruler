@@ -86,7 +86,7 @@
     <string name="about_author_names" translatable="false">Roberts Kolosovs</string>
     <string name="about_author_contributors">e colaboradores.</string>
     <string name="about_affiliation">Em parceria com</string>
-    <string name="privacy_friendly">Esta aplicação pertence ao grupo de Privacy Friendly Apps desenvolvido pela Technische Universität Darmstadt. Código fonte licenciado sob a GPLv3. Direitos de imagem TU Darmstadt e Google Inc.</string>
+    <string name="privacy_friendly">Esta aplicação pertence ao grupo de Privacy Friendly Apps desenvolvido pela Karlsruhe Institute of Technology. Código fonte licenciado sob a GPLv3. Direitos de imagem KIT e Google Inc.</string>
     <string name="more_info">Mais informações podem ser encontradas em:</string>
     <string name="github" translatable="false"><a href="https://github.com/SecUSo/privacy-friendly-ruler">Github-Repo</a></string>
     <string name="url"><a href="https://www.secuso.org/pfa">SECUSO Website</a></string>
