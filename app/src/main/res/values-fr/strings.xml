@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Règle</string>
+    <string name="navigation_drawer_open">Ouvrir le menu de navigation</string>
+    <string name="navigation_drawer_close">Fermer le menu de navigation</string>
+    <string name="about_author_contributors">et contributeurs.</string>
+    <string name="about_affiliation">En coopération avec</string>
+    <string name="more_info">Pour plus d\'informations :</string>
 </resources>
